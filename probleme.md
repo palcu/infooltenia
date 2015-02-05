@@ -4,12 +4,14 @@
 
 1.000.000 numere, citesti 999.999 de 100 ori, trebuie sa iti dai seama care a lipsit de cele mai multe ori.
 
+```
 5 5
 1 2 3 4 -> 5
 4 3 2 5 -> 1
 1 2 4 5 -> 3
 4 5 3 1 -> 2
 2 3 4 1 -> 5
+```
 
 Raspuns 5.
 
