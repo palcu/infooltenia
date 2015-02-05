@@ -35,6 +35,7 @@ Pentru 50 de puncte le dam doar 2 oameni.
 
 Ai N cutii, pentru fiecare cutie ai latura ei si greutate. Sa se spuna lungimea cea mai mare a pentru un turn de cutii, unde latura si greutatea sunt mereu mai mici sus.
 
-## @Vaca 1
+## Studenți Eminenți @andrei
 
 Se da o secventa de N de numere. Sa se verifice daca exista 4 numere care dau o anumita suma.
+
