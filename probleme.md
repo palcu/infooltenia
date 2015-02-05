@@ -4,12 +4,14 @@
 
 1.000.000 numere, citesti 999.999 de 100 ori, trebuie sa iti dai seama care a lipsit de cele mai multe ori.
 
+```
 5 5
 1 2 3 4 -> 5
 4 3 2 5 -> 1
 1 2 4 5 -> 3
 4 5 3 1 -> 2
 2 3 4 1 -> 5
+```
 
 Raspuns 5.
 
@@ -28,6 +30,7 @@ Ai o matrice, unde ai celule ocupate. Ai N oameni pe pozitiile (Xi, Yi). Sa se d
 ### Delimitari
 
 Pentru 50 de puncte le dam doar 2 oameni.
+De asemenea, le lăsăm pentru 100 de puncte soluția în care fac Lee pentru fiecare caracter. Șmenul e că trebuie să se prindă că au nevoie de o singură matrice, și să ia din matricea aia celula cu cea mai mică valoare.
 
 # Dublu
 
