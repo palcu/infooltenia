@@ -21,6 +21,10 @@ Maxim memorie 512 bytes.
 
 Pentru 50 de puncte le lasam mai putine numere sa poata sa faca vectori caracteristici.
 
+## Lychrel numbers @palcu
+
+Se dă un număr să se verifice dacă e [Lychrel](https://en.wikipedia.org/wiki/Lychrel_number) in maxim 50 de iteratii. Problema asta ar avea numere mari, adunari si verificare de palindom.
+
 # Clasa a 10-a
 
 ## World of Warcraft @palcu
