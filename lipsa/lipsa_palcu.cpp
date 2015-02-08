@@ -9,7 +9,7 @@
 using namespace std;
 
 const int MAX_SECVENTE = 100,
-          MAX_N = 1000000; // 
+          MAX_N = 1000000; // Just for reference
 
 int lipsa[MAX_SECVENTE];
 int sol[MAX_SECVENTE], noSol;
@@ -79,7 +79,7 @@ int main() {
         sol[noSol++] = lipsa[nSecventeIntrare-1];
     }
 
-    printf("%d\n", maxSolCount);
+    printf("%d %d\n", maxSolCount, noSol);
     for (int i=0; i<noSol; i++)
         printf("%d ", sol[i]);
     printf("\n");
