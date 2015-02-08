@@ -44,5 +44,11 @@ Ai N cutii, pentru fiecare cutie ai latura ei si greutate. Sa se spuna lungimea 
 
 ## Studenți Eminenți @andrei
 
-Se da o secventa de N de numere. Sa se verifice daca exista 4 numere care dau o anumita suma.
+Se da o secventa de N de numere. Sa se verifice daca exista 4 numere care dau o anumita suma, poate si cate combinatii exista :)
+Indicii valorilor ce formeaza o solutie trebuie sa fie distincti.
+
+-- Complexitate 1 - O(N ^ 2) -> hash-uri
+-- Complexitate 2 - O(N ^ 2 * log) -> sortare
+-- Complexitate 3 - O(N ^ 3 * log) -> 3 for-uri + cautare binara
+-- Complexitate 4 - O(N ^ 4) + bulaneli care sper sa intre aici 
 
