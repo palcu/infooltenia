@@ -17,6 +17,7 @@ Fişierul de intrare lipsa.in va pe prima linie două numere, N și M, reprezent
 
 ## lipsa.in
 
+```
 5 7
 5 2 3 4
 4 3 2 5
@@ -25,12 +26,14 @@ Fişierul de intrare lipsa.in va pe prima linie două numere, N și M, reprezent
 2 3 5 1
 1 2 4 5
 1 2 4 5
+```
 
 ## lipsa.out
 
+```
 2 3
 1 3 4 
-
+```
 
 
 # Particularități
