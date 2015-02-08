@@ -21,8 +21,8 @@ Probleme, rezolvari
 - [ ] sursa 50 @hasnarobert
 - [x] sursa 30 @hasnarobert
 
-## Cutii
+## Conuri (Ex Cutii)
 
-- [ ] sursa 100 @andrei14vl
+- [x] sursa 100 @andrei14vl
 - [ ] sursa 100
 - [ ] sursa 50 @palcu 
