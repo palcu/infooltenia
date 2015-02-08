@@ -17,14 +17,12 @@ bool Is_Palind() { //of curr_Val
 
 int main() {
     int steps=0;
-    freopen("conjectura.in", "r", stdin);
-    scanf("%s", curr_val);
-    cout << curr_val;
+    f >> curr_val;
     while (!Is_Palind()) {
        ++steps;
        for (int it = strlen(curr_val) - 1, new_pos = it + 1; it >= 0; --it, ++new_pos)
-          curr_val[it] = curr_val[new_pos];
+          curr_val[new_pos] = curr_val[it];
     }
     g << strlen(curr_val) << " " << steps;
-    
+
 }
