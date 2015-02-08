@@ -5,8 +5,8 @@ Probleme, rezolvari
 
 - [x] sursa de 100 pcte @palcu
 - [x] sursa de 100 pcte @andrei14vl
-- [ ] sursa proasta cu vectori caracteristic @hasnarobert
-- [ ] sursa proasta cu sortari @hasnarobert
+- [x] sursa proasta cu vectori caracteristic @hasnarobert
+- [x] sursa proasta cu sortari @hasnarobert
 
 ## Conjectura
 
