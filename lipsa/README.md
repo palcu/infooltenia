@@ -12,8 +12,10 @@ Fişierul de intrare lipsa.in va pe prima linie două numere, N și M, reprezent
 
 ## Restricții
 
+```
 2 <= N <= 1.000.000
 1 <= M <= 100
+```
 
 ## lipsa.in
 
