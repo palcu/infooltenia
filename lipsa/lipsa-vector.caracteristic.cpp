@@ -1,7 +1,7 @@
 /**
     Problema: lipsa
-    Solutie: Calcularea numarului lipsa din sir se face prin sortarea elementelor.
-    Complexitate timp: O(M * N * log N + M * log M)
+    Solutie: Calcularea numarului lipsa din sir se face prin utilizarea unui vector caracteristic.
+    Complexitate: O(M * N + M log M)
     Autor: Robert Hasna
  */
 #include <cstdio>
@@ -24,27 +24,21 @@ int main() {
     // Pentru fiecare linie, cautam care e numarul care lipseste
     while (M-- > 0) {
         v.clear();
-        v.reserve(N-1);
+        v.assign(N + 1, 0);
 
         // Citire din fisier
         for (int j = 0, x; j < N - 1; ++j) {
             scanf("%d ", &x);
-            v.push_back(x);
+            v[x] = 1;
         }
 
-        // Sortam vectorul
-        sort(v.begin(), v.end());
-
         // Determinam care dintre numere lipseste
-        int numarLipsa = -1;
-        for (int j = 1; j <= N-1; ++j) {
-            if (v[j - 1] != j) {
-                numarLipsa = j;
+        for (int j = 1; j <= N - 1; ++j) {
+            if (v[j] == 0) {
+                numereLipsa.push_back(j);
                 break;
             }
         }
-
-        numereLipsa.push_back(numarLipsa);
     }
 
     // Calculam de cate ori lipseste un numar cel mai mult, si cate astfel de numere exista ( X si Y din enunt )
