@@ -17,3 +17,12 @@ Probleme, rezolvari
 ## Lee
 
 - [ ] sursa 100 @hasnarobert
+- [ ] sursa 100 @palcu
+- [ ] sursa 50 @hasnarobert
+- [ ] sursa 30 @hasnarobert
+
+## Cutii
+
+- [ ] sursa 100 @andrei14vl
+- [ ] sursa 100
+- [ ] sursa 50 @palcu 
