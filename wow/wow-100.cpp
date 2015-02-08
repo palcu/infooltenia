@@ -42,7 +42,7 @@ inline bool inLabirint(Punct punct) {
 inline void pas(Punct punct, int cost) {
     for (int i = 0; i < 4; ++i) {
         Punct punctNou = make_pair(punct.first + dx[i], punct.second + dy[i]);
-        if (inLabirint(punctNou) && !vizitat[punctNou.first][punctNou.second]) {
+        if (inLabirint(punctNou) && !vizitat[punctNou.first][punctNou.second] && labirint[punctNou.first][punctNou.second] == 0) {
             vizitat[punctNou.first][punctNou.second] = 1;
             drumuri[punctNou.first][punctNou.second]+= cost + 1;
             Q.push(make_pair(punctNou, cost + 1));
@@ -94,7 +94,7 @@ int main() {
     Punct loculIntalnirii;
     for (int i = 0; i < N; ++i) {
         for (int j = 0; j < N; ++j) {
-            if (drumuri[i][j] < minim || minim == -1) {
+            if (labirint[i][j] == 0 && (drumuri[i][j] < minim || minim == -1)) {
                 minim = drumuri[i][j];
                 loculIntalnirii = make_pair(i, j);
             }

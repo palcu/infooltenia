@@ -32,7 +32,7 @@ inline bool inLabirint(Punct punct) {
 inline void pas(Punct punct, int cost) {
     for (int i = 0; i < 4; ++i) {
         Punct punctNou = make_pair(punct.first + dx[i], punct.second + dy[i]);
-        if (inLabirint(punctNou) && !distanta[punctNou.first][punctNou.second]) {
+        if (inLabirint(punctNou) && !distanta[punctNou.first][punctNou.second] && labirint[punctNou.first][punctNou.second] == 0) {
             distanta[punctNou.first][punctNou.second]+= cost + 1;
             Q.push(make_pair(punctNou, cost + 1));
         }
