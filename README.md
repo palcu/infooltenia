@@ -12,7 +12,7 @@ Probleme, rezolvari
 
 - [ ] sursa 100 @palcu
 - [ ] sursa 100 @andrei14vl
-- [ ] sursa proasta cu int-uri @hasnarobert
+- [x] sursa proasta cu int-uri @hasnarobert
 
 ## Lee
 
