@@ -16,10 +16,10 @@ Probleme, rezolvari
 
 ## Lee
 
-- [ ] sursa 100 @hasnarobert
+- [x] sursa 100 @hasnarobert
 - [ ] sursa 100 @palcu
 - [ ] sursa 50 @hasnarobert
-- [ ] sursa 30 @hasnarobert
+- [x] sursa 30 @hasnarobert
 
 ## Cutii
 
