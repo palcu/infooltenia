@@ -8,7 +8,7 @@ Fişierul de intrare lipsa.in va pe prima linie două numere, N și M, reprezent
 
 ## Date de ieșire
 
-În fişierul de ieşire lipsa.out pe prima linie vor fi două numere, X și Y, reprezentând de câte ori a fost furat cel mai mult un bilețel, și câte de astfel de bilețele există. Pe următoarea linie, vor fi Y numere, reprezentând bilețele furate de cele mai multe ori.
+În fişierul de ieşire lipsa.out pe prima linie vor fi două numere, X și Y, reprezentând de câte ori a fost furat cel mai mult un bilețel, și câte de astfel de bilețele există. Pe următoarea linie, vor fi Y numere, reprezentând bilețele furate de cele mai multe ori, în ordine crescătoare.
 
 ## Restricții
 
