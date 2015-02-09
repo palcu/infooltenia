@@ -1,4 +1,4 @@
-#Calup (Angrama Palcu)
+Calup (Palcu)
 
 Calup e student. Dupa ce a uitat cateva luni de acest lucru, si.a dat seama ca nu are cele mai strălucitoare note. 
 Notele sunt numere naturale intre 1 si 26
@@ -12,24 +12,18 @@ S3:xykcalupkxy
 
 Se intreaba acum, daca dupa ce a apasat pe taste in somn, visand ca termina facultatea mai exista o configuratie care sa asocieze fiecarei litere din sirul 2, un sir de caractere incat sirul 2 sa poata fi transformat in exact sirul 3.
 
-##Date de intrare
+Date de intrare
 
 Fisierul de intrare va contine doua linii: pe prima linie sirul de caractere S2, pe a doua linie sirul de caractere S3.
 
 Cele doua siruri S2, S3 au fost rezultati in urma celor doua operatii.
 
-##Date de iesire
+Date de iesire
 
 Va trebui sa afisati 26 de linii:
 Linia i contine echivalentul pentru litera i din alfabetul englez(in ordine, litera 1 este a, litera 2 este b, ... , litera 26 este z) din sirul S3.
 
-##calup.in Input
-
-abcba
-xykcalupkxy
-
-##calup.out Output
-
+Output
 
 xy
 k
