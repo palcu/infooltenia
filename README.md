@@ -7,6 +7,7 @@ Probleme, rezolvari
 - [x] sursa de 100 pcte @andrei14vl
 - [x] sursa proasta cu vectori caracteristic @hasnarobert
 - [x] sursa proasta cu sortari @hasnarobert
+- [ ] sursa băbească de la birou
 
 ## Conjectura
 
