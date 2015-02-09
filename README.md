@@ -19,8 +19,7 @@ Probleme, rezolvari
 
 - [x] sursa 100 @hasnarobert
 - [ ] sursa 100 @palcu
-- [ ] sursa 50 @hasnarobert
-- [x] sursa 30 @hasnarobert
+- [x] sursa 50@hasnarobert
 
 ## Conuri (Ex Cutii)
 
