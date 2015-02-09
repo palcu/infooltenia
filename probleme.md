@@ -38,7 +38,8 @@ De asemenea, le lăsăm pentru 100 de puncte soluția în care fac Lee pentru fi
 
 # Problemele la echipaj
 
-## Cutii Google @palcu
+## Cutii Google @palcu Update:conuri @andrei
+
 
 Ai N cutii, pentru fiecare cutie ai latura ei si greutate. Sa se spuna lungimea cea mai mare a pentru un turn de cutii, unde latura si greutatea sunt mereu mai mici sus.
 
@@ -52,3 +53,6 @@ Indicii valorilor ce formeaza o solutie trebuie sa fie distincti.
 -- Complexitate 3 - O(N ^ 3 * log) -> 3 for-uri + cautare binara
 -- Complexitate 4 - O(N ^ 4) + bulaneli care sper sa intre aici 
 
+##Calup
+
+Problema cu back cu amen

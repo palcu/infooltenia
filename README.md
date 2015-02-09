@@ -11,7 +11,7 @@ Probleme, rezolvari
 ## Conjectura
 
 - [ ] sursa 100 @palcu
-- [ ] sursa 100 @andrei14vl
+- [x ] sursa 100 @andrei14vl
 - [x] sursa proasta cu int-uri @hasnarobert
 
 ## Lee
@@ -25,4 +25,4 @@ Probleme, rezolvari
 
 - [x] sursa 100 @andrei14vl
 - [ ] sursa 100
-- [ ] sursa 50 @palcu 
+- [ ] sursa 50 @palcu
