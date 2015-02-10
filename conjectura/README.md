@@ -13,25 +13,38 @@ De exemplu 49:
 341=
 484 <- palindrom
 
-Dar unele numere, ca 196, nu ajung să fie palindrom niciodată. Scrieți un algoritm care pentru câteva numere date și numărul de iterații care trebuie efectuate, va afișa în câte iterații numărul devine palindrom sau dacă acesta nu devine în numărul maxim de iterații
+Dar unele numere, ca 196, nu ajung să fie palindrom niciodată. Scrieți un algoritm care pentru câteva numere date va afișa în câte iterații numărul devine palindrom sau LYCHREL în caz că acesta nu devine palindrom în 1000 de iterații.
 
 
 ## Date de intrare
-Fişierul de intrare conjectura.in va pe prima linie două numere, N și M, reprezentând numărul de numere și numărul maxim de iterații care trebuie efectuate. Pe următoarele M linii se va afla câte un număr X, reprezentând numerele care trebuie verificate.
+Fişierul de intrare conjectura.in va conține pe prima linie N, reprezentând numărul de numere care trebuie testate. Pe următoarele N linii se va afla câte un număr X, reprezentând numerele care trebuie verificate.
 
 ## Date de ieșire
-Fișierul de ieșire conjectura.out va conține pe fiecare linie numărul de iterații până când acel număr devine palindrom sau LYCHREL dacă acesta nu devine în numărul maxim de iterații
+Fișierul de ieșire conjectura.out va conține pe fiecare linie numărul de iterații până când acel număr devine palindrom sau LYCHREL dacă acesta nu devine în numărul maxim de iterații.
 
 ## Restricții
 
 ```
 Pentru 30 de puncte:
 1 <= N <= 10
-1 <= M <= 10
-1 <= X <= 100
+1 <= X <= 1.000
 
 Pentru 100 de puncte:
 1 <= N <= 100
-1 <= M <= 50
-1 <= X <= 1.000.000
+1 <= X <= 10.000
 ```
+
+Se garantează că pe primele 3 teste, în timpul operațiilor, numerele nu vor depăși 2147483647.
+
+# Teste
+
+1. N=10, int-uri
+2. N=10, int-uri
+3. N=10, int-uri
+4. N=20
+5. N=30
+6. N=50
+7. N=80
+8. N=90
+9. N=100
+10. N=100
