@@ -83,10 +83,11 @@
                 </p>
 
                 <p class="subtitlu">Cerinţă</p>
-                <font size="2" face="Verdana, Arial, Helvetica, sans-serif">Fie perechea <font face="Courier New, Courier, mono">L=(X, Y)</font> un
-                    punct in matrice care are proprietatea ca suma distantelor parcurse de reprezentanti pentru a ajunge la el este minima. Scrieti un
-                    program care sa determine suma distantelor parcurse de reprezentanti pentru a ajunge la punctul
-                    <font face="Courier New, Courier, mono">L</font>.</font>
+                <font size="2" face="Verdana, Arial, Helvetica, sans-serif">Scrieti un program care sa determine un loc pentru intalnire <font
+                        face="Courier New, Courier, mono">L=(X, Y)</font> cu proprietatea ca suma distantelor parcurse de reprezentanti pentru a
+                    ajunge la el este minima. De asemenea programul trebuie sa calculeze si suma distantelor parcurse de reprezentanti pana la punctul
+                    <font face="Courier New, Courier, mono">L</font>.
+                </font>
 
                 <p class="subtitlu">Date de intrare</p>
                 <font size="2" face="Verdana, Arial, Helvetica, sans-serif">Fisierul de intrare <font face="Courier New, Courier, mono">wow.in</font>
@@ -105,8 +106,11 @@
 
                 <p class="subtitlu">Date de ieşire</p>
                 <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
-                    Fisierul de iesire <font face="Courier New, Courier, mono">wow.out</font> va contine un singur numar care reprezinta suma minima a
-                    distantelor dintre reprezentanti si locul de intalnire stabilit de tine.
+                    Fisierul de iesire <font face="Courier New, Courier, mono">wow.out</font> va contine pe prima linie un numar care reprezinta suma
+                    distantelor parcurse de reprezentanti pana la punctul <font face="Courier New, Courier, mono">L</font>. A doua linie va contine
+                    doua numere <font face="Courier New, Courier, mono">X</font> si <font face="Courier New, Courier, mono">Y</font> reprezentand
+                    linia respectiv coloana punctului <font face="Courier New, Courier, mono">L</font>. <br/> Daca sunt mai multe puncte care satisfac
+                    proprietatea lui <font face="Courier New, Courier, mono">L</font> se va afisa cel mai mic lexicografic.
                 </font>
 
                 <p class="subtitlu">Restricţii</p>
@@ -130,6 +134,10 @@
                         <font size="2" face="Verdana, Arial, Helvetica, sans-serif">Exista cel putin un loc in care se pot intalni toti
                             reprezentantii.</font>
                     </li>
+                    <li>
+                        <font size="2" face="Verdana, Arial, Helvetica, sans-serif">Pentru <font face="Courier New, Courier, mono">30%</font> din
+                            teste, <font face="Courier New, Courier, mono">M</font> va avea valoarea <font face="Courier New, Courier, mono">2</font>.</font>
+                    </li>
                 </ul>
 
                 <p class="subtitlu">Exemple</p>
@@ -143,8 +151,15 @@
                     <tr>
                         <td class="tabel" valign="top"><span class="courier">5 3<br/>0 0 1 0 0<br/>0 1 0 0 0<br/>0 1 0 0 0<br/>0 0 0 0 0<br/>0 0 0 0 0<br/>0 0<br/>2 2<br/>4 0</span>
                         </td>
-                        <td class="tabel" valign="top"><span class="courier">7</span></td>
+                        <td class="tabel" valign="top"><span class="courier">7<br/>3 0</span></td>
                         <td class="tabel" valign="top"><span class="courier">Pozitiile reprezentantilor sunt marcate cu R. Locul de intalnire care este marcat cu L<br/><br/>R 0 1 0 0<br/>0 1 0 0 0<br/>0 1 R 0 0<br/>L 0 0 0 0<br/>R 0 0 0 0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tabel" valign="top"><span class="courier">4 2<br/>0 0 1 0<br/>0 1 0 0<br/>0 1 0 0<br/>0 0 0 0<br/>0 0<br/>3 2</span>
+                        </td>
+                        <td class="tabel" valign="top"><span class="courier">5<br/>0 0</span></td>
+                        <td class="tabel" valign="top"><span class="courier">Locurile posibile de intalnire sunt marcate cu L. Ele se suprapun cu locurile de start ale celor 2 reprezentanti. Solutia cea mai mica lexicografica este <font face="Courier New, Courier, mono">0 0</font>.<br/><br/>L 0 1 0<br/>L 1 0 0<br/>L 1 0 0<br/>L L L 0</span>
                         </td>
                     </tr>
                 </table>
