@@ -1,4 +1,4 @@
-from sh import cp, rm, diff
+from sh import cp, rm, diff, ErrorReturnCode
 import sh
 import os
 
@@ -12,7 +12,7 @@ for i in range(1, 11):
   print 'Testul ', i
   cp(filename + str(i) + '.in', 'conjectura.in')
   os.system('./a.out')
-  print diff('conjectura.out', filename + str(i) + '.ok')
+  print diff('conjectura.out', filename + str(i) + '.ok', _ok_code=[0, 1])
 
 for extension in ['in', 'out']:
   rm('conjectura.' + extension)
