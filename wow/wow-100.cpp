@@ -74,7 +74,7 @@ int main() {
     freopen("wow.out", "w", stdout);
 
     // Citirea datelor
-    scanf("%d %d\n", &N, &M, &nr_pers);
+    scanf("%d %d %d\n", &N, &M, &nr_pers);
     for (int i = 0; i < N; ++i) {
         for (int j = 0; j < M; ++j) {
             scanf("%d", &labirint[i][j]);
@@ -96,7 +96,7 @@ int main() {
     int minim = -1;
     Punct loculIntalnirii;
     for (int i = 0; i < N; ++i) {
-        for (int j = 0; j < M; ++j) {          
+        for (int j = 0; j < M; ++j) {
             if (labirint[i][j] == 0 && vizitatTotal[i][j] == nr_pers && (drumuri[i][j] < minim || minim == -1)) {
                 minim = drumuri[i][j];
                 loculIntalnirii = make_pair(i, j);
@@ -106,6 +106,6 @@ int main() {
 
     // Afisarea rezultatului
     printf("%d\n%d %d\n", minim, loculIntalnirii.first, loculIntalnirii.second);
-    
+
     return 0;
 }
