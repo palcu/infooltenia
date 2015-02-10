@@ -37,11 +37,15 @@ int main() {
 
         // Determinam care dintre numere lipseste
         int numarLipsa = -1;
-        for (int j = 1; j <= N-1; ++j) {
-            if (v[j - 1] != j) {
-                numarLipsa = j;
+        for (int j = 0; j < v.size(); ++j) {
+            if (v[j] != j + 1) {
+                numarLipsa = j + 1;
                 break;
             }
+        }
+        
+        if (numarLipsa == -1) {
+            numarLipsa = N;
         }
 
         numereLipsa.push_back(numarLipsa);
@@ -50,26 +54,21 @@ int main() {
     // Calculam de cate ori lipseste un numar cel mai mult, si cate astfel de numere exista ( X si Y din enunt )
     sort(numereLipsa.begin(), numereLipsa.end());
 
-    int maxim = 0, numarDeMaxime = 0, curent = 0, valoare = 0;
+    int maxim = -1, numarDeMaxime = 0, curent = 0, valoare = 0;
     for (int i = 0; i < numereLipsa.size(); ++i) {
-        if (numereLipsa[i] != valoare) {
-            valoare = numereLipsa[i];
-
-            if (curent > maxim) {
-                maxim = curent;
-                numarDeMaxime = 1;
-            }
-
-            if (curent == maxim) {
-                numarDeMaxime++;
-            }
-            curent = 1;
-        } else {
+        if (numereLipsa[i] == valoare) {
             curent++;
+        } else {
+            valoare = numereLipsa[i];
+            curent = 1;
         }
-    }
-    if (curent > maxim) {
-        maxim = curent;
+        
+        if (curent == maxim) {
+            numarDeMaxime++;
+        } else if (curent > maxim) {
+            maxim = curent;
+            numarDeMaxime = 1;
+        }
     }
 
     // Afisarea rezultatului
@@ -78,15 +77,16 @@ int main() {
     for (int i = 0; i < numereLipsa.size(); ++i) {
         if (numereLipsa[i] == valoare) {
             curent++;
-
-            if (curent == maxim) {
-                printf("%d ", valoare);
-            }
         } else {
             valoare = numereLipsa[i];
             curent = 1;
         }
+
+        if (curent == maxim) {
+            printf("%d ", valoare);
+        }
     }
+    
     printf("\n");
 
     return 0;
