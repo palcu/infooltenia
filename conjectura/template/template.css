@@ -1,0 +1,70 @@
+body,td,th { color: #000000; } body { background-color: #FFFFFF; margin-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; font-family:Verdana; font-size:12px; } a:link { color: #385d9c; text-decoration: none;
+} a:visited { color: #385d9c; text-decoration: none; } a:hover { color: #385d9c; text-decoration: underline; } a:active { color: #385d9c; text-decoration: none; } .titlu { color:#385d9c; font-size:44px; font-weight:bold; font-family:arial; } .subtitlu
+{
+	font-size:16px;
+	font-weight:bold;
+	color:#385d9c;
+	font-family:arial;
+}
+.separator
+{
+padding-bottom: 6px;
+
+}
+.courier
+{
+	font-family:courier new;
+}
+.antet
+{
+	background-color:#eeeeee;
+	border:thin #dddddd solid;
+}
+.tabel
+{
+	border:thin #dddddd solid;
+}
+.table
+{
+	border:thin #cccccc solid;
+}
+.continut
+{
+	font-size:12px;
+}
+.fundalee
+{
+	background-color:#f6f6f6;
+	background-image:url(hr.png);
+	background-position:bottom right;
+	background-repeat:repeat-x;
+}
+.fundaljosee
+{
+	background-color:#f6f6f6;
+	background-image:url(hj.png);
+	background-position:top right;
+	background-repeat:repeat-x;
+}
+.fundalcampion
+{
+	background-image:url(sigla.png);
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+.gri
+{
+	color:#000000;
+}
+.albastru
+{
+	color:#385d9c;
+}
+.bold
+{
+	font-weight:bold;
+}
+.italic
+{
+	font-style:italic;
+}
