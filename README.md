@@ -16,7 +16,7 @@ Probleme, rezolvari
 ## Conjectura
 
 - [x] sursa 100 @palcu
-- [x] sursa 100 @andrei14vl
+- [ ] sursa 100 @andrei14vl
 - [x] sursa proasta cu int-uri @hasnarobert
 - [x] teste @palcu
 - [ ] Enunt HTML cu .campion template @palcu
