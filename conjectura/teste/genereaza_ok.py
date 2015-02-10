@@ -15,3 +15,4 @@ for i in range(1, 10):
 for extension in ['in', 'out']:
   rm('conjectura.' + extension)
 rm('conjectura-palcu.cpp')
+rm('a.out')
