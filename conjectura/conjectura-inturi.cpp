@@ -18,7 +18,7 @@ long long invers(long long x) {
         invers = invers * 10 + x % 10;
         x /= 10;
     }
-    
+
     return invers;
 }
 
@@ -31,22 +31,22 @@ bool estePalindrom(long long x) {
 int main() {
     freopen("conjectura.in", "r", stdin);
     freopen("conjectura.out", "w", stdout);
-    
+
     scanf("%d %d", &N, &M);
     while (N-- > 0) {
         scanf("%lld", &x);
-        
+
         if (estePalindrom(x)) {
             // Numarul este deja palindrom dupa 0 iteratii
-            
+
             printf("0\n");
             continue;
         }
-        
+
         int stop = 0;
         for (int i = 1; i <= M; ++i) {
             x += invers(x);
-            
+
             if (estePalindrom(x)) {
                 printf("%d\n", i);
                 stop = 1;
@@ -54,9 +54,9 @@ int main() {
             }
         }
         if (!stop) {
-            printf("lychrel\n");
+            printf("LYCHREL\n");
         }
     }
-    
+
     return 0;
 }
