@@ -84,12 +84,12 @@ int main() {
                 pozY=j;
             }
 
-    printf("%d\n%d %d\n\n", solMin, pozX, pozY);
-    for (int i=0; i<lgMatrice_n; i++) {
-        for (int j=0; j<lgMatrice_m; j++)
-            printf("%d ", sol[i][j]);
-        printf("\n");
-    }
+    printf("%d\n%d %d\n", solMin, pozX, pozY);
+    // for (int i=0; i<lgMatrice_n; i++) {
+    //     for (int j=0; j<lgMatrice_m; j++)
+    //         printf("%d ", sol[i][j]);
+    //     printf("\n");
+    // }
     return 0;
 }
 
