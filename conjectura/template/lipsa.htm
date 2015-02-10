@@ -14,7 +14,7 @@
 <body>
   <table width="100%" border="0" cellspacing="0" cellpadding="10" class="fundalee">
     <tr>
-      <td><span class="titlu">lipsa</span></td>
+      <td><span class="titlu">conjectura</span></td>
 
       <td class="fundalcampion" align="right">
         <br />
@@ -45,7 +45,7 @@
 
             <td>
               <div align="right">
-                <span class="bold"><span class="albastru">512 KB/512 KB</span></span>
+                <span class="bold"><span class="albastru">2 MB/1 MB</span></span>
               </div>
             </td>
           </tr>
@@ -60,32 +60,54 @@
         <div align="justify">
           <p align="justify"><font size="2" face=
           "Verdana, Arial, Helvetica, sans-serif">
-Carl Friedrich când era mic avea o cutie în care ținea N bilețele, cu numerele de la 1 la N pe care le folosea la aritmetică. Fratele lui mai mare din când în când îi mai fura câte un singur bilețel ca să îl enerveze. După ce se întâmpla asta, Carl trebuia să scoată din cutie fiecare bilețel, să le noteze, să observe care număr a fost furat, să rescrie pe hârtie numărul și să îl adauge din nou în cutie. Fascinat fiind de matematică, a observat că fratele lui fura câteva numere mai mult decât altele.</font></p>
+> CONJECTÚRĂ, conjecturi, s. f. Părere bazată pe ipoteze sau pe presupuneri; prezumție, supoziție. – Din fr. conjecture, lat. conjectura.<br>
+dexonline.ro</font></p>
+
+          <p align="justify"><font size="2" face=
+          "Verdana, Arial, Helvetica, sans-serif">
+Conjecturile sunt probleme încă nedemonstrate, dar la care matematicienii nu au găsit încă o caz particular care să nege presupunarea. Una din aceste conjecturi se numește Lychrel și enunțul ei este extrem de simplu. Se ia un număr, se adună cu alt număr obținut prin oglindirea lui și se așteaptă să se găsească un palindrom. Dacă nu se întâmplă asta, se repetă operația cu noul număr.
+</font></p>
+
+          <p align="justify"><font size="2" face=
+          "Verdana, Arial, Helvetica, sans-serif">
+De exemplu 49:<br>
+<br>
+49+<br>
+94=<br>
+143+<br>
+341=<br>
+484 <- palindrom<br>
+</font></p>
+
+          <p align="justify"><font size="2" face=
+          "Verdana, Arial, Helvetica, sans-serif">
+Dar unele numere, ca 196, nu ajung să fie palindrom niciodată. Scrieți un algoritm care pentru câteva numere date va afișa în câte iterații numărul devine palindrom sau LYCHREL în caz că acesta nu devine palindrom în 1000 de iterații.
+</font></p>
 
           <p class="subtitlu">Date de intrare</p><font size="2" face=
           "Verdana, Arial, Helvetica, sans-serif">Fisierul de intrare <font face=
-          "Courier New, Courier, mono">lipsa.in</font> va pe prima linie două numere, N și M, reprezentând numărul de bilețele și de câte ori fratele mai mare i-a furat un bilețel. Pe următoarele M-1 linii, se află câte N-1 numere, reprezentând bilețelele pe care Carl le găsea după ce fratele îi spunea că i-a furat un bilețel</font>
+          "Courier New, Courier, mono">conjectura.in</font> va conține pe prima linie N, reprezentând numărul de numere care trebuie testate. Pe următoarele N linii se va afla câte un număr X, reprezentând numerele care trebuie verificate.</font>
 
           <p class="subtitlu">Date de ie&#351;ire</p><font size="2" face=
           "Verdana, Arial, Helvetica, sans-serif">Fisierul de iesire <font face=
-          "Courier New, Courier, mono">lipsa.out</font> va contine pe prima linie vor fi două numere, X și Y, reprezentând de câte ori a fost furat cel mai mult un bilețel, și câte de astfel de bilețele există. Pe următoarea linie, vor fi Y numere, reprezentând bilețele furate de cele mai multe ori, în ordine crescătoare.
+          "Courier New, Courier, mono">conjectura.out</font> va conține pe fiecare linie numărul de iterații până când acel număr devine palindrom sau LYCHREL dacă acesta nu devine în numărul maxim de iterații.
 
           <p class="subtitlu">Restric&#355;ii</p>
-          <p>Pentru 40% din teste, calculele nu vor depasi 10^9:</p>
+          <p>Pentru 30% din teste nu va fi niciun numar Lychrel si:</p>
           <ul type="square">
             <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><font face=
-            "Courier New, Courier, mono">2 <= N <= 1.000</font></li>
+            "Courier New, Courier, mono">2 <= N <= 10</font></li>
 
             <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><font face=
-            "Courier New, Courier, mono">1 <= M <= 30</font></li>
+            "Courier New, Courier, mono">1 <= X <= 1.000</font></li>
           </ul>
-          <p>Pentru restul de 60% din teste:</p>
+          <p>Pentru restul de 70% din teste:</p>
           <ul type="square">
             <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><font face=
-            "Courier New, Courier, mono">2 <= N <= 10.000</font></li>
+            "Courier New, Courier, mono">2 <= N <= 100</font></li>
 
             <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><font face=
-            "Courier New, Courier, mono">1 <= M <= 100</font></li>
+            "Courier New, Courier, mono">1 <= M <= 10.000</font></li>
           </ul>
 
           <p class="subtitlu">Exemple</p>
@@ -93,27 +115,41 @@ Carl Friedrich când era mic avea o cutie în care ținea N bilețele, cu numere
           <table cellpadding="5" cellspacing="0" border="0" width="49%" class="table">
             <tr>
               <td width="41%" class="antet"><strong><span class=
-              "courier">lipsa.in</span></strong></td>
+              "courier">conjectura.in</span></strong></td>
 
               <td width="59%" class="antet"><strong><span class=
-              "courier">lipsa.out</span></strong></td>
+              "courier">conjectura.out</span></strong></td>
             </tr>
 
             <tr>
               <td class="tabel" valign="top"><span class="courier">
-5 7<br>
-5 2 3 4<br>
-4 3 2 5<br>
-1 2 5 3<br>
-4 5 3 1<br>
-2 3 5 1<br>
-1 2 4 5<br>
-1 2 4 5<br>
+10<br>
+13<br>
+174<br>
+1231<br>
+13<br>
+14<br>
+887<br>
+1119231<br>
+6<br>
+121<br>
+54<br>
               </span>
               </td>
 
-              <td class="tabel" valign="top"><span class="courier">2 3<br />
-              1 3 4</span></td>
+              <td class="tabel" valign="top"><span class="courier">
+1<br>
+4<br>
+1<br>
+1<br>
+1<br>
+LYCHREL<br>
+19<br>
+0<br>
+0<br>
+1<br>
+              </span>
+              </td>
             </tr>
           </table><br />
 

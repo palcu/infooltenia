@@ -10,11 +10,13 @@ Probleme, rezolvari
 - [x] sursa băbească de la birou @palcu
 - [x] teste @palcu
 - [x] Enunt HTML cu .campion template @palcu
+- [x] Outputul meu e diferit. @hasnarobert
+- [x] Outputul lui Andrei e nesortat @andrei14vl (@palcu l-am facut eu)
 
 ## Conjectura
 
 - [x] sursa 100 @palcu
-- [x] sursa 100 @andrei14vl
+- [ ] sursa 100 @andrei14vl
 - [x] sursa proasta cu int-uri @hasnarobert
 - [x] teste @palcu
 - [ ] Enunt HTML cu .campion template @palcu
@@ -26,6 +28,7 @@ Probleme, rezolvari
 - [x] sursa 50@hasnarobert
 - [ ] teste @andrei14vl
 - [x] Enunt HTML cu .campion template @hasnarobert
+- [ ] Verificare surse @palcu
 
 ## Conuri (Ex Cutii)
 
