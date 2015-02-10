@@ -4,11 +4,13 @@
 #include <queue>
 #include <cstring>
 #include <utility>
+#include <cstdlib>
 
 using namespace std;
 
 const int MAX_LG_MATRICE = 128,
           MAX_CARACTERE = 128;
+bool virgina = true;
 
 int sol[MAX_LG_MATRICE][MAX_LG_MATRICE],
     m[MAX_LG_MATRICE][MAX_LG_MATRICE];
@@ -49,10 +51,22 @@ void lee(int x, int y) {
 }
 
 void aduna_matrice() {
+    bool se_suprapun = false;
     for (int i=0; i<lgMatrice_n; i++)
         for (int j=0; j<lgMatrice_m; j++)
-            if (m[i][j])
+            if (m[i][j]) {
+                if (virgina) {
+                    se_suprapun = true;
+                } else {
+                    if (sol[i][j]) se_suprapun = true;
+                }
                 sol[i][j] += m[i][j] - 1;
+            }
+    if (!se_suprapun) {
+        printf("-1\n");
+        exit(0);
+    }
+    virgina = false;
 }
 
 
