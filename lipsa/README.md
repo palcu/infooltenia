@@ -14,7 +14,7 @@ Fişierul de intrare lipsa.in va pe prima linie două numere, N și M, reprezent
 
 ```
 2 <= N <= 10.000
-1 <= M <= 1000
+1 <= M <= 100
 ```
 
 ## lipsa.in
