@@ -26,6 +26,7 @@ Probleme, rezolvari
 - [x] sursa 100 @andrei14vl
 - [ ] sursa 100
 - [ ] sursa 50 @palcu
+- [x] teste
 
 # Echipaje
 
