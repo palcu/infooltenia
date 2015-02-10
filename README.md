@@ -19,16 +19,16 @@ Probleme, rezolvari
 - [ ] sursa 100 @andrei14vl
 - [x] sursa proasta cu int-uri @hasnarobert
 - [x] teste @palcu
-- [ ] Enunt HTML cu .campion template @palcu
+- [x] Enunt HTML cu .campion template @palcu
 
 ## Wow
 
 - [x] sursa 100 @hasnarobert
 - [x] sursa 100 @palcu
 - [x] sursa 50@hasnarobert
-- [ ] teste @andrei14vl
 - [x] Enunt HTML cu .campion template @hasnarobert
-- [ ] Verificare surse @palcu
+- [ ] teste @andrei14vl
+- [ ] Verificare surse @palcu (dupa ce se termina cu testele)
 
 ## Conuri (Ex Cutii)
 
