@@ -1,10 +1,10 @@
 # Enunț
 
-Carl Friedrich când era mic avea o cutie în care ținea N bilețele, cu numerele de la 1 la N pe care le folosea la aritmetică. Fratele lui mai mare din când în când îi mai fura câte un singur bilețel ca să îl enerveze. După ce se întâmpla asta, Carl trebuia să scoată din cutie fiecare bilețel, să le noteze, să observe care număr a fost furat, să rescrie pe hârtie numărul și să îl adauge din nou în cutie. Fascinat fiind de matematică, a observat că fratele lui fura câteva numere mai mult decât altele. Din nefericire, el nu are un calculator, așa că vă roagă pe voi să rezolvați problema.
+Carl Friedrich când era mic avea o cutie în care ținea N bilețele, cu numerele de la 1 la N, pe care le folosea la aritmetică. Fratele lui mai mare din când în când îi mai fura câte un singur bilețel ca să îl enerveze. După ce se întâmpla asta, Carl trebuia să scoată din cutie fiecare bilețel, să le noteze, să observe care număr a fost furat, să rescrie pe hârtie numărul și să îl adauge din nou în cutie. Fascinat fiind de matematică, a observat că fratele lui fura câteva numere mai mult decât altele. Din nefericire, el nu are un calculator, așa că vă roagă pe voi să aflați care numere erau furate mai mult.
 
 ## Date de intrare
 
-Fişierul de intrare lipsa.in va pe prima linie două numere, N și M, reprezentând numărul de bilețele și de câte ori fratele mai mare i-a furat un bilețel. Pe următoarele M-1 linii, se află câte N-1 numere, reprezentând bilețelele pe care Carl le găsea după ce fratele îi spunea că i-a furat un bilețel
+Fişierul de intrare lipsa.in va pe prima linie două numere, N și M, reprezentând numărul de bilețele și de câte ori fratele mai mare i-a furat un bilețel. Pe următoarele M linii, se află câte N-1 numere, reprezentând bilețelele pe care Carl le găsea după ce fratele îi spunea că i-a furat un bilețel
 
 ## Date de ieșire
 
@@ -12,9 +12,18 @@ Fişierul de intrare lipsa.in va pe prima linie două numere, N și M, reprezent
 
 ## Restricții
 
+Pentru 40% din teste:
+
+```
+2 <= N <= 1.000
+1 <= M <= 30
+```
+
+Pentru 60% din teste:
+
 ```
 2 <= N <= 10.000
-1 <= M <= 1000
+1 <= M <= 100
 ```
 
 ## lipsa.in
@@ -59,5 +68,5 @@ Fişierul de intrare lipsa.in va pe prima linie două numere, N și M, reprezent
 6. 6.000, 60
 7. 7.000, 70
 8. 8.000, 90
-9. n = 10.0000, m = 100, se fura doar 69
+9. n = 10.000, m = 100, se fura doar 69
 10. n = 10.000, m = 100, se fura fiecare numar o data

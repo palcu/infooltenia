@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <title>.campion</title>
+  <link rel="stylesheet" type="text/css" href="template.css" />
+</head>
+
+<body>
+  <table width="100%" border="0" cellspacing="0" cellpadding="10" class="fundalee">
+    <tr>
+      <td><span class="titlu">conjectura</span></td>
+
+      <td class="fundalcampion" align="right">
+        <br />
+        <br />
+        <br />
+
+        <table>
+          <tr>
+            <td>
+              <div align="left">
+                <span class="albastru">Timp maxim de execu&#355;ie/test:</span>
+              </div>
+            </td>
+
+            <td>
+              <div align="right">
+                <span class="bold"><span class="albastru">0.5 secunde</span></span>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div align="left">
+                <span class="albastru">Memorie totala disponibil&#259;/stiv&#259;:</span>
+              </div>
+            </td>
+
+            <td>
+              <div align="right">
+                <span class="bold"><span class="albastru">2 MB/1 MB</span></span>
+              </div>
+            </td>
+          </tr>
+        </table><br />
+      </td>
+    </tr>
+  </table>
+
+  <table width="100%" border="0" cellspacing="0" cellpadding="10">
+    <tr>
+      <td>
+        <div align="justify">
+          <p align="justify"><font size="2" face=
+          "Verdana, Arial, Helvetica, sans-serif"><i>
+> CONJECTÚRĂ, conjecturi, s. f. Părere bazată pe ipoteze sau pe presupuneri; prezumție, supoziție. – Din fr. conjecture, lat. conjectura.<br>
+dexonline.ro</i></font></p>
+
+          <p align="justify"><font size="2" face=
+          "Verdana, Arial, Helvetica, sans-serif">
+Conjecturile sunt probleme pentru care nu există o demonstrație pentru cazul general, dar la care matematicienii nu au găsit încă un caz particular care să nege presupunarea făcută. Una din aceste conjecturi se numește Lychrel. Se ia un număr natural, se adună cu un alt număr obținut prin oglindirea lui și se așteaptă să se găsească un palindrom. Dacă nu se întâmplă asta, se repetă operația cu noul număr.
+</font></p>
+
+          <p align="justify"><font size="2" face=
+          "Verdana, Arial, Helvetica, sans-serif">
+De exemplu <font face="Courier New, Courier, mono">49</font>:<br><font face="Courier New, Courier, mono">
+<br>
+49+<br>
+94=<br>
+143+<br>
+341=<br>
+484 <- palindrom<br></font>
+</font></p>
+
+          <p align="justify"><font size="2" face=
+          "Verdana, Arial, Helvetica, sans-serif">
+Dar unele numere, ca <font face="Courier New, Courier, mono">196</font>, nu ajung să fie palindrom niciodată. Scrieți un algoritm care pentru câteva numere date va afișa în câte iterații numărul devine palindrom sau <font face="Courier New, Courier, mono">LYCHREL</font> în caz că acesta nu devine palindrom în <font face="Courier New, Courier, mono">1000</font> de iterații. Dacă numărul este deja palindrom, afișați <font face="Courier New, Courier, mono">0</font>.
+</font></p>
+
+          <p class="subtitlu">Date de intrare</p><font size="2" face=
+          "Verdana, Arial, Helvetica, sans-serif">Fisierul de intrare <font face=
+          "Courier New, Courier, mono">conjectura.in</font> va conține pe prima linie <font face="Courier New, Courier, mono">N</font>, reprezentând numărul de numere care trebuie testate. Pe următoarele <font face="Courier New, Courier, mono">N</font> linii se va afla câte un număr <font face="Courier New, Courier, mono">X</font>, reprezentând numerele care trebuie verificate.</font>
+
+          <p class="subtitlu">Date de ie&#351;ire</p><font size="2" face=
+          "Verdana, Arial, Helvetica, sans-serif">Fisierul de iesire <font face=
+          "Courier New, Courier, mono">conjectura.out</font> va conține pe fiecare linie numărul de iterații până când acel număr devine palindrom sau <font face="Courier New, Courier, mono">LYCHREL</font> dacă acesta nu devine în numărul maxim de iterații.
+
+          <p class="subtitlu">Restric&#355;ii</p>
+          <p>Pentru <font face="Courier New, Courier, mono">30%</font> din teste nu va fi niciun numar Lychrel si:</p>
+          <ul type="square">
+            <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><font face=
+            "Courier New, Courier, mono">2 <= N <= 10</font></li>
+
+            <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><font face=
+            "Courier New, Courier, mono">1 <= X <= 1.000</font></li>
+          </ul>
+          <p>Pentru restul de <font face="Courier New, Courier, mono">70%</font> din teste:</p>
+          <ul type="square">
+            <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><font face=
+            "Courier New, Courier, mono">2 <= N <= 100</font></li>
+
+            <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><font face=
+            "Courier New, Courier, mono">1 <= M <= 10.000</font></li>
+          </ul>
+
+          <p class="subtitlu">Exemple</p>
+
+          <table cellpadding="5" cellspacing="0" border="0" width="49%" class="table">
+            <tr>
+              <td width="41%" class="antet"><strong><span class=
+              "courier">conjectura.in</span></strong></td>
+
+              <td width="59%" class="antet"><strong><span class=
+              "courier">conjectura.out</span></strong></td>
+            </tr>
+
+            <tr>
+              <td class="tabel" valign="top"><span class="courier">
+10<br>
+13<br>
+174<br>
+1231<br>
+13<br>
+14<br>
+887<br>
+1119231<br>
+6<br>
+121<br>
+54<br>
+              </span>
+              </td>
+
+              <td class="tabel" valign="top"><span class="courier">
+1<br>
+4<br>
+1<br>
+1<br>
+1<br>
+LYCHREL<br>
+19<br>
+0<br>
+0<br>
+1<br>
+              </span>
+              </td>
+            </tr>
+          </table><br />
+
+          <table cellpadding="2" cellspacing="0" border="0" align="right">
+            <tr>
+              <td align="right" class="bold">Alex Palcuie<br>Robert Hasna<br>Andrei Vacaroiu</td>
+            </tr>
+
+            <tr>
+              <td align="right" class="italic">Universitatea din Bucuresti</td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

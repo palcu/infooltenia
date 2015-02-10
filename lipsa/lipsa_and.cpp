@@ -1,6 +1,7 @@
 #include <fstream>
 #include <unordered_map>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 ifstream f("lipsa.in");
@@ -33,6 +34,7 @@ int main() {
     }
 
     g << max_count << " " << max_count_list.size() << "\n";
+    sort(max_count_list.begin(), max_count_list.end());
     for (int list_it = 0; list_it < max_count_list.size(); ++list_it)
         g << max_count_list[list_it] << " ";
     g << "\n";

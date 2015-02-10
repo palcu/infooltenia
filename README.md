@@ -9,23 +9,26 @@ Probleme, rezolvari
 - [x] sursa proasta cu sortari @hasnarobert
 - [x] sursa băbească de la birou @palcu
 - [x] teste @palcu
-- [ ] Enunt HTML cu .campion template @palcu
+- [x] Enunt HTML cu .campion template @palcu
+- [x] Outputul meu e diferit. @hasnarobert
+- [x] Outputul lui Andrei e nesortat @andrei14vl (@palcu l-am facut eu)
 
 ## Conjectura
 
 - [x] sursa 100 @palcu
-- [x] sursa 100 @andrei14vl
+- [ ] sursa 100 @andrei14vl
 - [x] sursa proasta cu int-uri @hasnarobert
 - [x] teste @palcu
-- [ ] Enunt HTML cu .campion template @palcu
+- [x] Enunt HTML cu .campion template @palcu
 
 ## Wow
 
 - [x] sursa 100 @hasnarobert
 - [x] sursa 100 @palcu
 - [x] sursa 50@hasnarobert
+- [x] Enunt HTML cu .campion template @hasnarobert
 - [ ] teste @andrei14vl
-- [ ] Enunt HTML cu .campion template @hasnarobert
+- [ ] Verificare surse @palcu (dupa ce se termina cu testele)
 
 ## Conuri (Ex Cutii)
 

@@ -21,6 +21,7 @@ int nr_pers; // Numarul de persoane
 int labirint[ NMAX ][ NMAX ]; // Labirintul
 int drumuri[ NMAX ][ NMAX ]; // Suma drumurilor
 int vizitat[ NMAX ][ NMAX ]; // Matrice de locuri vizitate, pentru Lee
+int vizitatTotal[ NMAX ][ NMAX ]; // Matrice in care stochez de cate ori a fost vizitat un punct in total.
 vector< Punct > oameni;
 queue< pair<Punct,int> > Q; // Coada pentru Lee. Punctul vizitat si costul de a ajunge la el
 
@@ -44,6 +45,7 @@ inline void pas(Punct punct, int cost) {
         Punct punctNou = make_pair(punct.first + dx[i], punct.second + dy[i]);
         if (inLabirint(punctNou) && !vizitat[punctNou.first][punctNou.second] && labirint[punctNou.first][punctNou.second] == 0) {
             vizitat[punctNou.first][punctNou.second] = 1;
+            vizitatTotal[punctNou.first][punctNou.second]++;
             drumuri[punctNou.first][punctNou.second]+= cost + 1;
             Q.push(make_pair(punctNou, cost + 1));
         }
@@ -58,6 +60,7 @@ void lee(Punct start) {
     }
     Q.push(make_pair(start, 0));
     vizitat[start.first][start.second] = 1;
+    vizitatTotal[start.first][start.second]++;
 
     while (!Q.empty()) {
         pair< Punct, int > q = Q.front();
@@ -93,8 +96,8 @@ int main() {
     int minim = -1;
     Punct loculIntalnirii;
     for (int i = 0; i < N; ++i) {
-        for (int j = 0; j < M; ++j) {
-            if (labirint[i][j] == 0 && (drumuri[i][j] < minim || minim == -1)) {
+        for (int j = 0; j < M; ++j) {          
+            if (labirint[i][j] == 0 && vizitatTotal[i][j] == nr_pers && (drumuri[i][j] < minim || minim == -1)) {
                 minim = drumuri[i][j];
                 loculIntalnirii = make_pair(i, j);
             }
