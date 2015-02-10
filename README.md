@@ -10,6 +10,8 @@ Probleme, rezolvari
 - [x] sursa băbească de la birou @palcu
 - [x] teste @palcu
 - [x] Enunt HTML cu .campion template @palcu
+- [ ] Outputul meu e diferit. @hasnarobert
+- [ ] Outputul lui Andrei e nesortat @andrei14vl
 
 ## Conjectura
 
@@ -26,6 +28,7 @@ Probleme, rezolvari
 - [x] sursa 50@hasnarobert
 - [ ] teste @andrei14vl
 - [x] Enunt HTML cu .campion template @hasnarobert
+- [ ] Verificare surse @palcu
 
 ## Conuri (Ex Cutii)
 
