@@ -2,7 +2,7 @@ from sh import cp, rm, diff, ErrorReturnCode
 import sh
 import os
 
-SURSA_VERIFICATA = 'lipsa-sortare.cpp'
+SURSA_VERIFICATA = 'lipsa_and.cpp'
 
 cp('../' + SURSA_VERIFICATA, '.')
 os.system('g++ ' + SURSA_VERIFICATA)
