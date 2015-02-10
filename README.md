@@ -8,7 +8,7 @@ Probleme, rezolvari
 - [x] sursa proasta cu vectori caracteristic @hasnarobert
 - [x] sursa proasta cu sortari @hasnarobert
 - [x] sursa băbească de la birou @palcu
-- [ ] teste @palcu
+- [x] teste @palcu
 - [ ] Enunt HTML cu .campion template @palcu
 
 ## Conjectura
@@ -16,7 +16,7 @@ Probleme, rezolvari
 - [x] sursa 100 @palcu
 - [x] sursa 100 @andrei14vl
 - [x] sursa proasta cu int-uri @hasnarobert
-- [ ] teste @palcu
+- [x] teste @palcu
 - [ ] Enunt HTML cu .campion template @palcu
 
 ## Wow
