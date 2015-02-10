@@ -56,20 +56,24 @@ int main() {
         scanf("%d", &x);
         set_big_numbers_to_zero();
         set_first_number_to(x);
-        int sol = 0;
-        for (int i=0; i<nIteratii; i++) {
-            if (is_palindrom()) {
-                sol = i;
-                break;
-            }
-            generate_second_number();
-            sum_numbers();
-        }
-
-        if (sol) {
-            printf("%d\n", sol);
+        if (is_palindrom()) {
+            printf("0\n");
         } else {
-            printf("LYCHREL\n");
+            int sol = 0;
+            for (int i=0; i<nIteratii; i++) {
+                if (is_palindrom()) {
+                    sol = i;
+                    break;
+                }
+                generate_second_number();
+                sum_numbers();
+            }
+
+            if (sol) {
+                printf("%d\n", sol);
+            } else {
+                printf("LYCHREL\n");
+            }
         }
     }
 }
