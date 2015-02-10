@@ -25,7 +25,7 @@ Probleme, rezolvari
 - [x] sursa 100 @palcu
 - [x] sursa 50@hasnarobert
 - [ ] teste @andrei14vl
-- [ ] Enunt HTML cu .campion template @hasnarobert
+- [x] Enunt HTML cu .campion template @hasnarobert
 
 ## Conuri (Ex Cutii)
 
