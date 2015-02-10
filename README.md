@@ -11,7 +11,7 @@ Probleme, rezolvari
 - [x] teste @palcu
 - [x] Enunt HTML cu .campion template @palcu
 - [ ] Outputul meu e diferit. @hasnarobert
-- [ ] Outputul lui Andrei e nesortat @andrei14vl
+- [x] Outputul lui Andrei e nesortat @andrei14vl (@palcu l-am facut eu)
 
 ## Conjectura
 
