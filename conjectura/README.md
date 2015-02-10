@@ -3,7 +3,7 @@
 > CONJECTÚRĂ, conjecturi, s. f. Părere bazată pe ipoteze sau pe presupuneri; prezumție, supoziție. – Din fr. conjecture, lat. conjectura.
 dexonline.ro
 
-Conjecturile sunt probleme încă nedemonstrate, dar la care matematicienii nu au găsit încă o caz particular care să nege presupunarea. Una din aceste conjecturi se numește Lychrel și enunțul ei este extrem de simplu. Se ia un număr, se adună cu alt număr obținut prin oglindirea lui și se așteaptă să se găsească un palindrom. Dacă nu se întâmplă asta, se repetă operația cu noul număr.
+Conjecturile sunt probleme pentru care nu există o demonstrație pentru cazul general, dar la care matematicienii nu au găsit încă un caz particular care să nege presupunarea făcută. Una din aceste conjecturi se numește Lychrel. Se ia un număr natural, se adună cu un alt număr obținut prin oglindirea lui și se așteaptă să se găsească un palindrom. Dacă nu se întâmplă asta, se repetă operația cu noul număr.
 
 De exemplu 49:
 
@@ -13,7 +13,7 @@ De exemplu 49:
 341=
 484 <- palindrom
 
-Dar unele numere, ca 196, nu ajung să fie palindrom niciodată. Scrieți un algoritm care pentru câteva numere date va afișa în câte iterații numărul devine palindrom sau LYCHREL în caz că acesta nu devine palindrom în 1000 de iterații.
+Dar unele numere, ca 196, nu ajung să fie palindrom niciodată. Scrieți un algoritm care pentru câteva numere date va afișa în câte iterații numărul devine palindrom sau LYCHREL în caz că acesta nu devine palindrom în 1000 de iterații. Dacă numărul este deja palindrom, afișați 0.
 
 
 ## Date de intrare
