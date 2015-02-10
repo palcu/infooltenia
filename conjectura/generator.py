@@ -1,4 +1,4 @@
-from random import shuffle
+from random import shuffle, randint
 
 
 stream = open('numere.txt')
@@ -12,9 +12,12 @@ for line in stream:
 MAX_INT = 2147483647
 MAX_LEN_INT = len(str(MAX_INT)) - 1
 
-n = 100
+n = 20
 print(n)
 
-numere.sort(key=lambda x: x['length'], reverse=True)
-for x in numere[:n]:
+shuffle(numere)
+for x in numere[:n-1]:
   print x['id']
+
+numere.sort(key=lambda x: x['length'], reverse=True)
+print numere[randint(1, 100)]['id']
