@@ -8,7 +8,7 @@
 
 using namespace std;
 
-int N, M;
+int N, M = 1000;
 long long x;
 
 // Calculeaza inversul unui numar
@@ -32,7 +32,7 @@ int main() {
     freopen("conjectura.in", "r", stdin);
     freopen("conjectura.out", "w", stdout);
 
-    scanf("%d %d", &N, &M);
+    scanf("%d", &N);
     while (N-- > 0) {
         scanf("%lld", &x);
 

@@ -34,7 +34,7 @@ Pentru 100 de puncte:
 1 <= X <= 10.000
 ```
 
-Se garantează că pe primele 3 teste, în timpul operațiilor, numerele nu vor depăși 2147483647.
+Se garantează că pe primele 3 teste, în timpul operațiilor, numerele nu vor depăși 2147483647. Pe următoarele 7 teste, numerele nu vor depăși 512 cifre ca lungime.
 
 # Teste
 

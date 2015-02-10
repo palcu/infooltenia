@@ -24,5 +24,4 @@ int main() {
           curr_val[new_pos] = curr_val[it];
     }
     g << strlen(curr_val) << " " << steps;
-
 }

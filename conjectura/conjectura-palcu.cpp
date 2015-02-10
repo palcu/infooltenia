@@ -1,4 +1,4 @@
-// InfoOltenia 2015, Cojectura, @palcu
+// InfoOltenia 2015, Conjectura, @palcu
 // Solutie 100 de puncte
 
 #include <cstdio>
