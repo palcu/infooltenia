@@ -6,7 +6,7 @@ cp('../conjectura-palcu.cpp', '.')
 os.system('g++ conjectura-palcu.cpp')
 
 filename = 'grader_test'
-for i in range(1, 10):
+for i in range(1, 11):
   print 'Testul ', i
   cp(filename + str(i) + '.in', 'conjectura.in')
   os.system('./a.out')
