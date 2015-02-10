@@ -59,5 +59,5 @@ Fişierul de intrare lipsa.in va pe prima linie două numere, N și M, reprezent
 6. 6.000, 60
 7. 7.000, 70
 8. 8.000, 90
-9. n = 10.0000, m = 100, se fura doar 69
+9. n = 10.000, m = 100, se fura doar 69
 10. n = 10.000, m = 100, se fura fiecare numar o data

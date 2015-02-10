@@ -9,7 +9,7 @@ Probleme, rezolvari
 - [x] sursa proasta cu sortari @hasnarobert
 - [x] sursa băbească de la birou @palcu
 - [x] teste @palcu
-- [ ] Enunt HTML cu .campion template @palcu
+- [x] Enunt HTML cu .campion template @palcu
 
 ## Conjectura
 
