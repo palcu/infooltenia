@@ -44,7 +44,7 @@ Se garantează că pe primele 3 teste, în timpul operațiilor, numerele nu vor 
 4. N=20
 5. N=30
 6. N=50
-7. N=80
+7. N=80, int-uri
 8. N=90
 9. N=100
 10. N=100, cele mai groaznice ca timp de iterare
