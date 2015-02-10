@@ -49,7 +49,7 @@ int main() {
     // printf("\n");
 
 
-    int maxSolCount = 1, 
+    int maxSolCount = 1,
         currentCount = 1,
         noSol = 1;
     sol[0] = lipsa[0];
