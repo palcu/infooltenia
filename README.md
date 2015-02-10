@@ -18,7 +18,7 @@ Probleme, rezolvari
 ## Lee
 
 - [x] sursa 100 @hasnarobert
-- [ ] sursa 100 @palcu
+- [x] sursa 100 @palcu
 - [x] sursa 50@hasnarobert
 
 ## Conuri (Ex Cutii)
