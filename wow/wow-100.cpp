@@ -16,8 +16,8 @@ static const int NMAX = 100;
 static const int dx[] = { 0, 1, 0, -1 };
 static const int dy[] = { 1, 0, -1, 0 };
 
-int N; // Latura labirintului
-int M; // Numarul de persoane
+int N, M; // Latura labirintului
+int nr_pers; // Numarul de persoane
 int labirint[ NMAX ][ NMAX ]; // Labirintul
 int drumuri[ NMAX ][ NMAX ]; // Suma drumurilor
 int vizitat[ NMAX ][ NMAX ]; // Matrice de locuri vizitate, pentru Lee
@@ -27,7 +27,7 @@ queue< pair<Punct,int> > Q; // Coada pentru Lee. Punctul vizitat si costul de a 
 // Curata matricea de vizite. Pregatire pentru urmatoarea rulare a algoritmului lui lee.
 void stergeVizite() {
     for (int i = 0; i < N; ++i) {
-        for (int j = 0; j < N; ++j) {
+        for (int j = 0; j < M; ++j) {
             vizitat[i][j] = 0;
         }
     }
@@ -35,7 +35,7 @@ void stergeVizite() {
 
 // Verifica daca un punct este in interiorul labirintului
 inline bool inLabirint(Punct punct) {
-    return !(punct.first < 0 || punct.first >= N || punct.second < 0 || punct.second >= N);
+    return !(punct.first < 0 || punct.first >= N || punct.second < 0 || punct.second >= M);
 }
 
 // Face un pas in algoritmul lui Lee. Primeste un puct si viziteaza toate cele 4 puncte adiacente.
@@ -58,7 +58,7 @@ void lee(Punct start) {
     }
     Q.push(make_pair(start, 0));
     vizitat[start.first][start.second] = 1;
-    
+
     while (!Q.empty()) {
         pair< Punct, int > q = Q.front();
         Q.pop();
@@ -69,53 +69,46 @@ void lee(Punct start) {
 int main() {
     freopen("wow.in", "r", stdin);
     freopen("wow.out", "w", stdout);
-    
+
     // Citirea datelor
-    scanf("%d %d\n", &N, &M);
+    scanf("%d %d\n", &N, &M, &nr_pers);
     for (int i = 0; i < N; ++i) {
-        for (int j = 0; j < N; ++j) {
+        for (int j = 0; j < M; ++j) {
             scanf("%d", &labirint[i][j]);
         }
     }
-    
-    for (int i = 0; i < M; ++i) {
+
+    for (int i = 0; i < nr_pers; ++i) {
         int x, y;
         scanf("%d %d", &x, &y);
         oameni.push_back(make_pair(x, y));
     }
-    
+
     // Rularea algoritmului lui Lee pentru fiecare om din labirint
     for (vector<Punct>::iterator it = oameni.begin(); it != oameni.end(); it++) {
         lee(*it);
     }
-    
+
     // Extragerea rezultatului
     int minim = -1;
     Punct loculIntalnirii;
     for (int i = 0; i < N; ++i) {
-        for (int j = 0; j < N; ++j) {
+        for (int j = 0; j < M; ++j) {
             if (labirint[i][j] == 0 && (drumuri[i][j] < minim || minim == -1)) {
                 minim = drumuri[i][j];
                 loculIntalnirii = make_pair(i, j);
             }
         }
     }
-    
+
     // Afisarea rezultatului
     printf("%d\n%d %d\n\n", minim, loculIntalnirii.first, loculIntalnirii.second);
     for (int i = 0; i < N; ++i) {
-        for (int j = 0; j < N; ++j) {
+        for (int j = 0; j < M; ++j) {
             printf("%d ", drumuri[i][j]);
         }
         printf("\n");
     }
-    
+
     return 0;
 }
-
-
-
-
-
-
-
