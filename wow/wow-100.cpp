@@ -105,13 +105,7 @@ int main() {
     }
     
     // Afisarea rezultatului
-    printf("%d\n%d %d\n\n", minim, loculIntalnirii.first, loculIntalnirii.second);
-    for (int i = 0; i < N; ++i) {
-        for (int j = 0; j < N; ++j) {
-            printf("%d ", drumuri[i][j]);
-        }
-        printf("\n");
-    }
+    printf("%d\n%d %d\n", minim, loculIntalnirii.first, loculIntalnirii.second);
     
     return 0;
 }

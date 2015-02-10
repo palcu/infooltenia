@@ -80,11 +80,16 @@ int main() {
 
     // Afisarea rezultatului
     printf("%d\n", distanta[destinatie.first][destinatie.second] - 1);
-    for (int i = 0; i < N; ++i) {
-        for (int j = 0; j < N; ++j) {
-            printf("%d ", distanta[i][j]);
+    if (sursa.first < destinatie.first) {
+        printf("%d %d\n", sursa.first, sursa.second);
+    } else if (sursa.first > destinatie.first) {
+        printf("%d %d\n", destinatie.first, destinatie.second);
+    } else {
+        if (sursa.second < destinatie.second) {
+            printf("%d %d\n", sursa.first, sursa.second);
+        } else {
+            printf("%d %d\n", destinatie.first, destinatie.second);
         }
-        printf("\n");
     }
 
     return 0;
