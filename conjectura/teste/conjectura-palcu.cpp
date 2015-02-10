@@ -44,9 +44,9 @@ void generate_second_number() {
     }
 }
 
-int main() {
-    freopen("conjectura.in", "r", stdin);
-    freopen("conjectura.out", "w", stdout);
+int main(int argc, char** argv) {
+    freopen("grader_test10.in", "r", stdin);
+    freopen("grader_test10.ok", "w", stdout);
 
     int nNumbers, nIteratii = 1000;
     scanf("%d", &nNumbers);
