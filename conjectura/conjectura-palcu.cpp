@@ -8,7 +8,7 @@ const int MAX_CIFRE = 128;
 int x1[MAX_CIFRE], x2[MAX_CIFRE]; // primul element din vector contine lungimea
 
 void sum_numbers() {
-    for (int i=0; i<x1[0]; i++) {
+    for (int i=1; i<=x1[0]; i++) {
         x1[i] += x2[i];
         if (x1[i] > 9) {
             x1[i+1]++;
@@ -19,8 +19,8 @@ void sum_numbers() {
 }
 
 bool is_palindrom() {
-    for (int i=0; i<x1[0] / 2; i++)
-        if (x1[i] != x1[x1[0] - i])
+    for (int i=1; i<=x1[0] / 2; i++)
+        if (x1[i] != x1[x1[0] - i + 1])
             return false;
     return true;
 }
@@ -39,7 +39,7 @@ void set_first_number_to(int x) {
 
 void generate_second_number() {
     x2[0] = x1[0];
-    for (int i=1; i<x2[0]; i++) {
+    for (int i=1; i<=x2[0]; i++) {
         x2[i] = x1[x1[0] - i + 1];
     }
 }
@@ -58,12 +58,12 @@ int main() {
         set_first_number_to(x);
         int sol = 0;
         for (int i=0; i<nIteratii; i++) {
-            generate_second_number();
-            sum_numbers();
             if (is_palindrom()) {
-                sol = i+1;
+                sol = i;
                 break;
             }
+            generate_second_number();
+            sum_numbers();
         }
 
         if (sol) {
