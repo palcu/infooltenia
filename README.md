@@ -19,7 +19,7 @@ Probleme, rezolvari
 - [ ] sursa 100 @andrei14vl
 - [x] sursa proasta cu int-uri @hasnarobert
 - [x] teste @palcu
-- [ ] Enunt HTML cu .campion template @palcu
+- [x] Enunt HTML cu .campion template @palcu
 
 ## Wow
 
