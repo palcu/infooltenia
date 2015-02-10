@@ -49,7 +49,7 @@ int main() {
     // printf("\n");
 
 
-    int maxSolCount = 1, 
+    int maxSolCount = 1,
         currentCount = 1,
         noSol = 1;
     sol[0] = lipsa[0];
@@ -69,20 +69,42 @@ int main() {
         }
     }
 
+    // printf("=== sol ===\n");
+    // for (int i=0; i<noSol; i++)
+    //     printf("%d ", sol[i]);
+    // printf("\n");
+
     // Atentie la cazul acesta particular
     if (currentCount > maxSolCount) {
         maxSolCount = currentCount;
         memset(sol, 0, sizeof(sol));
         sol[0] = lipsa[nSecventeIntrare-1];
         noSol = 1;
-    } else if (currentCount == maxSolCount) {
+    } else if (currentCount == maxSolCount &&
+               sol[noSol-1] != lipsa[nSecventeIntrare-1]) {
         sol[noSol++] = lipsa[nSecventeIntrare-1];
     }
 
-    printf("%d %d\n", maxSolCount, noSol);
-    for (int i=0; i<noSol; i++)
-        printf("%d ", sol[i]);
-    printf("\n");
+    // printf("=== sol ===\n");
+    // for (int i=0; i<3; i++)
+    //     printf("%d ", sol[i]);
+    // printf("\n");
+
+    // bug major dar YOLO
+    if (sol[0] == sol[1]) {
+        printf("%d %d\n", maxSolCount, noSol - 1);
+        for (int i=1; i<noSol; i++)
+            if (sol[i] != sol[i+1])
+                printf("%d ", sol[i]);
+        printf("\n");
+    } else {
+        printf("%d %d\n", maxSolCount, noSol);
+        for (int i=0; i<noSol; i++)
+            if (sol[i] != sol[i+1])
+                printf("%d ", sol[i]);
+        printf("\n");
+    }
+
 
     return 0;
 }

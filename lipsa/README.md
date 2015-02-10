@@ -13,8 +13,8 @@ Fişierul de intrare lipsa.in va pe prima linie două numere, N și M, reprezent
 ## Restricții
 
 ```
-2 <= N <= 1.000.000
-1 <= M <= 100
+2 <= N <= 10.000
+1 <= M <= 1000
 ```
 
 ## lipsa.in
@@ -34,7 +34,7 @@ Fişierul de intrare lipsa.in va pe prima linie două numere, N și M, reprezent
 
 ```
 2 3
-1 3 4 
+1 3 4
 ```
 
 
@@ -48,3 +48,16 @@ Fişierul de intrare lipsa.in va pe prima linie două numere, N și M, reprezent
 
 - fură același număr de fiecare dată
 - fură toate numerele o dată
+
+# Teste
+
+1. 100, 10
+2. 500, 20
+3. 1.000, 30
+4. 2.500, 40
+5. 5.000, 50
+6. 6.000, 60
+7. 7.000, 70
+8. 8.000, 90
+9. n = 10.000, m = 100, se fura doar 69
+10. n = 10.000, m = 100, se fura fiecare numar o data
