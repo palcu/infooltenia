@@ -45,7 +45,7 @@ Probleme, rezolvari
 - [ ] sursa 30 @palcu backtracking
 - [ ] sursa 50 N^2 @rhasna
 - [x] teste @andrei14vl
-- [ ] Enunt HTML cu .campion template @hasnarobert
+- [x] Enunt HTML cu .campion template @hasnarobert
 
 # Echipaje
 
