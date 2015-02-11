@@ -4,7 +4,7 @@
 #include <cstdio>
 #include <cstring>
 
-const int MAX_CIFRE = 128;
+const int MAX_CIFRE = 2048; // Maxim 1000 de iteratii
 int x1[MAX_CIFRE], x2[MAX_CIFRE]; // primul element din vector contine lungimea
 
 void sum_numbers() {
