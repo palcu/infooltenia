@@ -39,8 +39,8 @@ Probleme, rezolvari
 - [x] teste @andrei14vl
 - [x] Verificare surse @palcu
 - [x] De ce dau diferit testele 3 si 4 + fix. @palcu
-- [ ] reparam testele 3/4
-- [ ] sa facem o casuta libera in colturi la 8 teste
+- [x] reparam testele 3/4
+- [x] sa facem o casuta libera in colturi la 8 teste
 
 ## Conuri (Ex Cutii)
 
