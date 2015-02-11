@@ -33,7 +33,7 @@ int main() {
         }
 
         // Determinam care dintre numere lipseste
-        for (int j = 1; j <= N - 1; ++j) {
+        for (int j = 1; j <= N; ++j) {
             if (v[j] == 0) {
                 numereLipsa.push_back(j);
                 break;
@@ -44,8 +44,8 @@ int main() {
     // Calculam de cate ori lipseste un numar cel mai mult, si cate astfel de numere exista ( X si Y din enunt )
     sort(numereLipsa.begin(), numereLipsa.end());
 
-    int maxim = 0, numarDeMaxime = 0, curent = 0, valoare = 0;
-    for (int i = 0; i < numereLipsa.size(); ++i) {
+    int maxim = 0, numarDeMaxime = 0, curent = 1, valoare = 1;
+    for (int i = 1; i < numereLipsa.size(); ++i) {
         if (numereLipsa[i] != valoare) {
             valoare = numereLipsa[i];
 
@@ -64,10 +64,13 @@ int main() {
     }
     if (curent > maxim) {
         maxim = curent;
+        numarDeMaxime = 1; // @palcu: aici e un bug mare reparat de mine
+    } else if (curent == maxim) {
+        numarDeMaxime ++;
     }
 
     // Afisarea rezultatului
-    printf("%d %d\n", maxim, numarDeMaxime);
+    printf("%d %d\n", maxim, numarDeMaxime-1);
     curent = valoare = 0;
     for (int i = 0; i < numereLipsa.size(); ++i) {
         if (numereLipsa[i] == valoare) {
