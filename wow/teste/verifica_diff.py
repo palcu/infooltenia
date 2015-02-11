@@ -8,7 +8,7 @@ cp('../' + SURSA_VERIFICATA, '.')
 os.system('g++ ' + SURSA_VERIFICATA)
 
 filename = 'grader_test'
-for i in range(1, 4):
+for i in range(1, 11):
   print 'Testul ', i
   cp(filename + str(i) + '.in', 'wow.in')
   os.system('./a.out')

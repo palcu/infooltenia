@@ -6,7 +6,7 @@ cp('../wow-100.cpp', '.')
 os.system('g++ wow-100.cpp')
 
 filename = 'grader_test'
-for i in range(1, 4):
+for i in range(1, 11):
   print 'Testul ', i
   cp(filename + str(i) + '.in', 'wow.in')
   os.system('./a.out')
