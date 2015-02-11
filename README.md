@@ -17,7 +17,7 @@ Probleme, rezolvari
 - [x] Alex se uita peste celelalte care nu merg
 - [x] lipsa_n_patrat ia doar 10 puncte, restul incorect. Afisare cu bug
 - [x] lipsa-vector.caracteristic ia doar 20 de puncte, restul incorect. Afisarea lui Robert.
-- [ ] lipsa-vector.caracteristic pica 2 teste
+- [x] lipsa-vector.caracteristic pica 2 teste
 
 ## Conjectura
 
