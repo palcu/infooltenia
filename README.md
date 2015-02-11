@@ -15,8 +15,9 @@ Probleme, rezolvari
 - [x] Andrei sa isi reface sursa
 - [x] Andrei se culca
 - [x] Alex se uita peste celelalte care nu merg
-- [ ] lipsa_n_patrat ia doar 10 puncte, restul incorect
-- [ ] lipsa-vector.caracteristic ia doar 20 de puncte, restul incorect
+- [x] lipsa_n_patrat ia doar 10 puncte, restul incorect. Afisare cu bug
+- [x] lipsa-vector.caracteristic ia doar 20 de puncte, restul incorect. Afisarea lui Robert.
+- [ ] lipsa-vector.caracteristic pica 2 teste
 
 ## Conjectura
 
