@@ -72,15 +72,16 @@ int main() {
     for (int i = 0; i < numereLipsa.size(); ++i) {
         if (numereLipsa[i] == valoare) {
             curent++;
-
-            if (curent == maxim) {
-                printf("%d ", valoare);
-            }
         } else {
             valoare = numereLipsa[i];
             curent = 1;
         }
+
+        if (curent == maxim) {
+            printf("%d ", valoare);
+        }
     }
+
     printf("\n");
 
     return 0;
