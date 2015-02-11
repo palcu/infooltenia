@@ -44,29 +44,23 @@ int main() {
     // Calculam de cate ori lipseste un numar cel mai mult, si cate astfel de numere exista ( X si Y din enunt )
     sort(numereLipsa.begin(), numereLipsa.end());
 
-    int maxim = 0, numarDeMaxime = 0, curent = 1, valoare = 1;
-    for (int i = 1; i < numereLipsa.size(); ++i) {
+    int maxim = -1, numarDeMaxime = 0, curent = 0, valoare = 0;
+    for (int i = 0; i < numereLipsa.size(); ++i) {
         if (numereLipsa[i] != valoare) {
             valoare = numereLipsa[i];
-
-            if (curent > maxim) {
-                maxim = curent;
-                numarDeMaxime = 1;
-            }
-
-            if (curent == maxim) {
-                numarDeMaxime++;
-            }
             curent = 1;
         } else {
             curent++;
         }
-    }
-    if (curent > maxim) {
-        maxim = curent;
-        numarDeMaxime = 1; // @palcu: aici e un bug mare reparat de mine
-    } else if (curent == maxim) {
-        numarDeMaxime ++;
+        
+        if (curent > maxim) {
+            maxim = curent;
+            numarDeMaxime = 1;
+        }
+        
+        if (curent == maxim) {
+            numarDeMaxime++;
+        }
     }
 
     // Afisarea rezultatului
