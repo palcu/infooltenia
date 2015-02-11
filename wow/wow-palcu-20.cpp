@@ -1,4 +1,5 @@
-// WOW, @palcu, 100 puncte
+// WOW, @palcu, 20 puncte
+// e gresita pentru ca nu verific daca se intalnesc
 
 #include <cstdio>
 #include <queue>
