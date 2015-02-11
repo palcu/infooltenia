@@ -33,7 +33,7 @@ Probleme, rezolvari
 ## Conuri (Ex Cutii)
 
 - [x] sursa 100 @andrei14vl
-- [ ] sursa 100 @hasnarobert
+- [x] sursa 100 @hasnarobert
 - [ ] sursa 50 @palcu
 - [x] teste @andrei14vl
 - [ ] Enunt HTML cu .campion template @hasnarobert
