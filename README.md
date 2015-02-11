@@ -12,8 +12,9 @@ Probleme, rezolvari
 - [x] Enunt HTML cu .campion template @palcu
 - [x] Outputul meu e diferit. @hasnarobert
 - [x] Outputul lui Andrei e nesortat @andrei14vl (@palcu l-am facut eu)
-- [ ] Andrei sa isi reface sursa
+- [x] Andrei sa isi reface sursa
 - [ ] Alex se uita peste celelalte care nu merg
+- [x] Andrei se culca
 
 ## Conjectura
 
