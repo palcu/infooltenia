@@ -43,7 +43,7 @@ Probleme, rezolvari
 - [x] sursa 100 @andrei14vl
 - [x] sursa 100 @hasnarobert
 - [ ] sursa 30 @palcu backtracking
-- [ ] sursa 50 N^2 @rhasna
+- [x] sursa 50 N^2 @rhasna
 - [x] teste @andrei14vl
 - [x] Enunt HTML cu .campion template @hasnarobert
 

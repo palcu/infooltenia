@@ -2,7 +2,7 @@ from sh import cp, rm, diff, ErrorReturnCode
 import sh
 import os
 
-SURSA_VERIFICATA = 'cilindri-robert.cpp'
+SURSA_VERIFICATA = 'conuri-n2.cpp'
 
 cp('../' + SURSA_VERIFICATA, '.')
 os.system('g++ ' + SURSA_VERIFICATA)
