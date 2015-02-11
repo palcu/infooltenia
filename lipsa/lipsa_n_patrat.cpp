@@ -88,10 +88,20 @@ int main() {
         sol[noSol++] = lipsa[nSecventeIntrare-1];
     }
 
-    printf("%d %d\n", maxSolCount, noSol);
-    for (int i=0; i<noSol; i++)
-        printf("%d ", sol[i]);
-    printf("\n");
+    // bug major dar YOLO
+    if (sol[0] == sol[1]) {
+        printf("%d %d\n", maxSolCount, noSol - 1);
+        for (int i=1; i<noSol; i++)
+            if (sol[i] != sol[i+1])
+                printf("%d ", sol[i]);
+        printf("\n");
+    } else {
+        printf("%d %d\n", maxSolCount, noSol);
+        for (int i=0; i<noSol; i++)
+            if (sol[i] != sol[i+1])
+                printf("%d ", sol[i]);
+        printf("\n");
+    }
 
     return 0;
 }

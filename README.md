@@ -12,8 +12,12 @@ Probleme, rezolvari
 - [x] Enunt HTML cu .campion template @palcu
 - [x] Outputul meu e diferit. @hasnarobert
 - [x] Outputul lui Andrei e nesortat @andrei14vl (@palcu l-am facut eu)
-- [ ] Andrei sa isi reface sursa
-- [ ] Alex se uita peste celelalte care nu merg
+- [x] Andrei sa isi reface sursa
+- [x] Andrei se culca
+- [x] Alex se uita peste celelalte care nu merg
+- [x] lipsa_n_patrat ia doar 10 puncte, restul incorect. Afisare cu bug
+- [x] lipsa-vector.caracteristic ia doar 20 de puncte, restul incorect. Afisarea lui Robert.
+- [ ] lipsa-vector.caracteristic pica 2 teste
 
 ## Conjectura
 
@@ -22,7 +26,7 @@ Probleme, rezolvari
 - [x] sursa proasta cu int-uri @hasnarobert
 - [x] teste @palcu
 - [x] Enunt HTML cu .campion template @palcu
-- [ ] Sursa lui Alex nu ia 100. Fix it. @palcu
+- [x] Sursa lui Alex nu ia 100. Fix it. @palcu. Am uitat de limita unui vector
 
 ## Wow
 

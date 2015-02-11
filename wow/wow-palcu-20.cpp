@@ -13,8 +13,7 @@ const int MAX_LG_MATRICE = 128,
           MAX_CARACTERE = 128;
 
 int sol[MAX_LG_MATRICE][MAX_LG_MATRICE],
-    m[MAX_LG_MATRICE][MAX_LG_MATRICE],
-    noVizitari[MAX_LG_MATRICE][MAX_LG_MATRICE];
+    m[MAX_LG_MATRICE][MAX_LG_MATRICE];
 int lgMatrice_n, lgMatrice_m;
 bool obstacole[MAX_LG_MATRICE][MAX_LG_MATRICE];
 
@@ -55,7 +54,6 @@ void aduna_matrice() {
     for (int i=0; i<lgMatrice_n; i++)
         for (int j=0; j<lgMatrice_m; j++)
             if (m[i][j]) {
-                noVizitari[i][j]++;
                 sol[i][j] += m[i][j] - 1;
             }
 }
@@ -83,22 +81,18 @@ int main() {
                                             // first viable element
     for (int i=0; i<lgMatrice_n; i++)
         for (int j=0; j<lgMatrice_m; j++)
-            if (noVizitari[i][j]==nCaractere && (sol[i][j] < solMin)) {
+            if (sol[i][j] && (sol[i][j] < solMin)) {
                 solMin = sol[i][j];
                 pozX=i;
                 pozY=j;
             }
 
     printf("%d\n%d %d\n", solMin, pozX, pozY);
-
-    // printf("===NoVizitari===\n");
     // for (int i=0; i<lgMatrice_n; i++) {
-    //     for (int j=0; j<lgMatrice_m; j++){
-    //         printf("%2d ", noVizitari[i][j]);
-    //     }
+    //     for (int j=0; j<lgMatrice_m; j++)
+    //         printf("%d ", sol[i][j]);
     //     printf("\n");
     // }
-    //
     return 0;
 }
 

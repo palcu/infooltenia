@@ -43,7 +43,7 @@ int main() {
                 break;
             }
         }
-        
+
         if (numarLipsa == -1) {
             numarLipsa = N;
         }
@@ -59,15 +59,14 @@ int main() {
         if (numereLipsa[i] == valoare) {
             curent++;
         } else {
+            if (curent == maxim) {
+                numarDeMaxime++;
+            } else if (curent > maxim) {
+                maxim = curent;
+                numarDeMaxime = 1;
+            }
             valoare = numereLipsa[i];
             curent = 1;
-        }
-        
-        if (curent == maxim) {
-            numarDeMaxime++;
-        } else if (curent > maxim) {
-            maxim = curent;
-            numarDeMaxime = 1;
         }
     }
 
@@ -86,7 +85,7 @@ int main() {
             printf("%d ", valoare);
         }
     }
-    
+
     printf("\n");
 
     return 0;

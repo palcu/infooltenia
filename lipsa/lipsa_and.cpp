@@ -2,12 +2,14 @@
 #include <unordered_map>
 #include <vector>
 #include <algorithm>
+#define MMAX 101
 using namespace std;
 
 ifstream f("lipsa.in");
 ofstream g("lipsa.out");
 
-unordered_map <int, int> missing_number;
+
+int missing_number[MMAX];
 vector <int> max_count_list;
 
 int main() {
@@ -18,20 +20,25 @@ int main() {
         int Sum = N * (N + 1) / 2;
         for (int in_it = 1; in_it < N; ++in_it) {
             int in_value;
-
             f >> in_value;
             Sum -= in_value;
         }
         /* Sum is the missing number */
-        int temp_missing_nr_count = ++missing_number[Sum];
-        if (temp_missing_nr_count >= max_count) {
-            if (temp_missing_nr_count > max_count) {
-                max_count = temp_missing_nr_count;
+        missing_number[it] = Sum;
+    }
+    sort(missing_number + 1, missing_number + M + 1);
+    for (int it = 1; it <= M; ++it) {
+	int missing_nr_count = 1;
+	while (it + 1 <= M && missing_number[it + 1] == missing_number[it]) 
+	    ++missing_nr_count, ++it;
+    	if (missing_nr_count >= max_count) {
+            if (missing_nr_count > max_count) {
+                max_count = missing_nr_count;
                 max_count_list.clear();
             }
-            max_count_list.push_back(Sum);
+            max_count_list.push_back(missing_number[it]);
         }
-    }
+    }	
 
     g << max_count << " " << max_count_list.size() << "\n";
     sort(max_count_list.begin(), max_count_list.end());
