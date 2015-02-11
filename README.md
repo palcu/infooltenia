@@ -26,7 +26,7 @@ Probleme, rezolvari
 - [x] sursa 100 @hasnarobert
 - [x] sursa 100 @palcu
 - [x] sursa 50@hasnarobert
-- [x] Enunt HTML cu .campion template @hasnarobert
+- [x] Enunt HTML cu .campion template @hasnarobert /*TODO*/, mi-au iesit teste mai mari, parca maxim 1400 de oameni, ar trebui verificat enuntul inca odata sa fie corespunzator cu testele
 - [ ] teste @andrei14vl
 - [ ] Verificare surse @palcu (dupa ce se termina cu testele)
 
