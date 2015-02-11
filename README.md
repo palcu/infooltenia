@@ -29,7 +29,7 @@ Probleme, rezolvari
 - [x] sursa 100 @hasnarobert
 - [x] sursa 100 @palcu
 - [x] sursa 50@hasnarobert
-- [ ] Enunt HTML cu .campion template @hasnarobert /*TODO*/, mi-au iesit teste mai mari, parca maxim 1400 de oameni, ar trebui verificat enuntul inca odata sa fie corespunzator cu testele
+- [x] Enunt HTML cu .campion template @hasnarobert
 - [x] teste @andrei14vl
 - [x] Verificare surse @palcu
 - [ ] De ce dau diferit testele 3 si 4 + fix. @andrei14vl
