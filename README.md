@@ -12,6 +12,8 @@ Probleme, rezolvari
 - [x] Enunt HTML cu .campion template @palcu
 - [x] Outputul meu e diferit. @hasnarobert
 - [x] Outputul lui Andrei e nesortat @andrei14vl (@palcu l-am facut eu)
+- [ ] Andrei sa isi reface sursa
+- [ ] Alex se uita peste celelalte care nu merg
 
 ## Conjectura
 
@@ -20,21 +22,24 @@ Probleme, rezolvari
 - [x] sursa proasta cu int-uri @hasnarobert
 - [x] teste @palcu
 - [x] Enunt HTML cu .campion template @palcu
+- [ ] Sursa lui Alex nu ia 100. Fix it. @palcu
 
 ## Wow
 
 - [x] sursa 100 @hasnarobert
 - [x] sursa 100 @palcu
 - [x] sursa 50@hasnarobert
-- [x] Enunt HTML cu .campion template @hasnarobert /*TODO*/, mi-au iesit teste mai mari, parca maxim 1400 de oameni, ar trebui verificat enuntul inca odata sa fie corespunzator cu testele
+- [ ] Enunt HTML cu .campion template @hasnarobert /*TODO*/, mi-au iesit teste mai mari, parca maxim 1400 de oameni, ar trebui verificat enuntul inca odata sa fie corespunzator cu testele
 - [x] teste @andrei14vl
-- [ ] Verificare surse @palcu (dupa ce se termina cu testele)
+- [x] Verificare surse @palcu
+- [ ] De ce dau diferit testele 3 si 4 + fix. @andrei14vl
 
 ## Conuri (Ex Cutii)
 
 - [x] sursa 100 @andrei14vl
 - [x] sursa 100 @hasnarobert
-- [ ] sursa 50 @palcu
+- [ ] sursa 30 @palcu backtracking
+- [ ] sursa 50 N^2 @rhasna
 - [x] teste @andrei14vl
 - [ ] Enunt HTML cu .campion template @hasnarobert
 
