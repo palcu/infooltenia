@@ -13,7 +13,7 @@ for i in range(0, 10):
     continue
   print 'Testul ', i
   cp(str(i) + '-' + filename + '.in', 'conuri.in')
-  os.system('./a.out')
+  os.system('( cmdpid=$BASHPID; (sleep 10; kill $cmdpid) & exec ./a.out )')
   print diff('conuri.out', str(i) + '-' + filename + '.ok', _ok_code=[0, 1])
 
 for extension in ['in', 'out']:
