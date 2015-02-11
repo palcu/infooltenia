@@ -90,11 +90,15 @@ int main() {
             }
 
     printf("%d\n%d %d\n", solMin, pozX, pozY);
+
+    // printf("===NoVizitari===\n");
     // for (int i=0; i<lgMatrice_n; i++) {
-    //     for (int j=0; j<lgMatrice_m; j++)
-    //         printf("%d ", sol[i][j]);
+    //     for (int j=0; j<lgMatrice_m; j++){
+    //         printf("%2d ", noVizitari[i][j]);
+    //     }
     //     printf("\n");
     // }
+    //
     return 0;
 }
 
