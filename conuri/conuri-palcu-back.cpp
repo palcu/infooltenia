@@ -11,12 +11,13 @@ int back(int index, int value) {
     if (index >= n)
         return 0;
 
+    int sol = 0;
     for (int i=index; i<n; i++)
         for (int j=0; j<2; j++)
             if (conuri[j][i] == value) {
-                return 1 + back(i + 1, conuri[1-j][i]);
+                sol = max(sol, 1 + back(i + 1, conuri[1-j][i]));
             }
-    return 0;
+    return sol;
 }
 
 int main() {
