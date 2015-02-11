@@ -2,7 +2,7 @@ from sh import cp, rm, diff, ErrorReturnCode
 import sh
 import os
 
-SURSA_VERIFICATA = 'wow-palcu.cpp'
+SURSA_VERIFICATA = 'wow-100.cpp'
 
 cp('../' + SURSA_VERIFICATA, '.')
 os.system('g++ ' + SURSA_VERIFICATA)
