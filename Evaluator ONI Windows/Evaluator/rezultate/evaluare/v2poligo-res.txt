@@ -1,0 +1,32 @@
+				BORDEROU DE EVALUARE
+
+ID         Nume            Prenume              Scoala                        
+V2POLIGO   -               -                    -                             
+
+Problema: poligon
+Sursa:    v2poligon.cpp
+
+Test   Punctaj  Timp     Memorie  Mesaj:
+		  (ms)	  (KB)
+0      5        0.043    120      Corect !                 
+1      5        0.007    120      Corect !                 
+2      5        0.007    120      Corect !                 
+3      5        0.007    120      Corect !                 
+4      5        0.007    120      Corect !                 
+5      5        0.027    120      Corect !                 
+6      5        0.007    120      Corect !                 
+7      5        0.007    120      Corect !                 
+8      5        0.007    120      Corect !                 
+9      5        0.007    120      Corect !                 
+10     5        0.009    120      Corect !                 
+11     5        0.010    120      Corect !                 
+12     5        0.012    120      Corect !                 
+13     5        0.013    120      Corect !                 
+14     5        0.036    120      Corect !                 
+15     5        0.016    120      Corect !                 
+16     5        0.018    120      Corect !                 
+17     5        0.020    120      Corect !                 
+18     5        0.021    120      Corect !                 
+19     5        0.049    120      Corect !                 
+TOTAL: 100 puncte
+=======================================================

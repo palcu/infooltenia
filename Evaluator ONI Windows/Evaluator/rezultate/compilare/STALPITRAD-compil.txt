@@ -1,0 +1,13 @@
+				 BORDEROU DE COMPILARE
+
+ID         Nume            Prenume              Scoala                        
+STALPITRAD 
+
+Sursa:     stalpitrada.cpp
+Problema:  stalpi
+
+Mesaj compilator:
+stalpitrada.cpp:95:1: warning: no newline at end of file
+
+
+

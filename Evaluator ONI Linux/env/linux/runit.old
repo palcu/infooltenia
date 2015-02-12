@@ -1,0 +1,168 @@
+/* eval/linux/runit.c 
+ * Run a contestants program in a secure environment.
+ */
+ 
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <signal.h>
+#include <pwd.h>
+#include <grp.h>
+#include <fcntl.h>
+#include <string.h>
+#include <errno.h>
+#include <math.h>
+
+const char usage[] =
+	"usage: runit <exe> <user> <time> <data> <stack> <stdin> <stdout> <rev>\n"
+	"  <exe>     The executable file (must be in working directory)\n"
+	"  <user>    Run program as this unpriviledged user\n"
+	"  <time>    Running time limit (in seconds, real number)\n"
+	"  <data>    Limit on data segment (in Mb, real number)\n"
+	"  <stack>   Limit on stack segment (in Mb, real number)\n"
+	"  <stdin>   Program's standard input (usually /dev/null)\n"
+	"  <stdout>  Program's standard output (null if work/stdout)\n"
+	"  <rev>     Reverse order in which stdin/stdout are opened (0/1)\n";
+
+int time_lim;		/* in usecs */
+pid_t child_pid;
+
+void sig_alrm(int signo)
+{
+	kill(child_pid, SIGKILL);
+	printf("tmout %d.%03d 0 Time limit exceeded!\n", 
+		time_lim / 1000000, time_lim % 1000000 / 1000 + 1);
+	exit(0);
+}
+
+void perr(const char *s)
+{
+	char *se = strerror(errno);
+	
+	write(2, s, strlen(s));
+	write(2, ": ", 2);
+	write(2, se, strlen(se));
+	write(2, "\n", 1);
+	exit(-1);
+}
+
+int main(int argc, char **argv)
+{
+	int data_lim, stk_lim, rev;
+	struct passwd *p;
+	
+	if(argc != 9) {
+		fputs(usage, stderr);
+		return(1);
+	}
+	if(geteuid()) {
+		fputs("runit: must be run as root (or suid root)\n", stderr);
+		return(1);
+	}
+	if(!(p = getpwnam(argv[2]))) {
+		fprintf(stderr, "%s: no such user\n", argv[2]);
+		return(1);
+	}
+	time_lim = (int) ceil(1000000 * atof(argv[3]));
+	data_lim = (int) ceil(1024 * 1024 * atof(argv[4]));
+	stk_lim = (int) ceil(1024 * 1024 * atof(argv[5]));
+
+	rev = atoi(argv[8]);
+	
+	signal(SIGALRM, sig_alrm);
+	
+	switch(child_pid = fork()) {
+	case -1:
+		perror("fork(2)");
+		return(1);
+		
+	default: {
+		struct itimerval tv;
+		int stat, runtime;
+
+		tv.it_interval.tv_sec = tv.it_interval.tv_usec = 0;
+		tv.it_value.tv_sec = time_lim / 1000000;
+		tv.it_value.tv_usec = time_lim % 1000000;
+		setitimer(ITIMER_REAL, &tv, NULL);
+		
+		waitpid(child_pid, &stat, 0);
+		signal(SIGALRM, SIG_IGN);
+		
+		getitimer(ITIMER_REAL, &tv);
+		runtime = time_lim - 
+			(tv.it_value.tv_sec * 1000000 + tv.it_value.tv_usec);
+		if(runtime < 0)
+			runtime = 0;
+		runtime /= 1000;
+			
+		if(WIFEXITED(stat)) {
+			if(!WEXITSTATUS(stat))
+				printf("runok %d.%03d -- output needs to be verified\n", 
+					runtime / 1000, runtime % 1000);
+			else printf("badexit %d.%03d 0 Nonzero exit status: %d\n",
+				runtime / 1000, runtime % 1000, WEXITSTATUS(stat));
+		} else if(WIFSIGNALED(stat))
+			printf("signal %d.%03d 0 Killed by signal: %d\n",
+				runtime / 1000, runtime % 1000, WTERMSIG(stat));
+		else abort();
+		return(0);
+		}
+		
+	case 0: {
+		struct rlimit rl;
+		int fd, i;
+		sigset_t sigs;
+		
+		rl.rlim_cur = 1;
+		rl.rlim_max = 1;
+		setrlimit(RLIMIT_NPROC, &rl);
+		rl.rlim_cur = data_lim;
+		rl.rlim_max = data_lim;
+		setrlimit(RLIMIT_AS, &rl);
+		rl.rlim_cur = stk_lim;
+		rl.rlim_max = stk_lim;
+		setrlimit(RLIMIT_STACK, &rl);
+		
+		sigemptyset(&sigs);
+		sigaddset(&sigs, SIGPIPE);
+		sigprocmask(SIG_BLOCK, &sigs, NULL);
+
+		for(i = 0; i < 2; i++) {
+			if(i ^ rev) {
+				if((fd = open(argv[6], O_RDONLY)) == -1)
+					perr("open(2)");
+				dup2(fd, 0);
+				close(fd);
+			} else if(*argv[7]) {
+				if((fd = open(argv[7], O_WRONLY)) == -1)
+					perr("open(2)");
+				dup2(fd, 1);
+				close(fd);
+			}
+		}
+		
+		if(chroot("."))
+			perr("chroot(2)");
+		if(setgid(p->pw_gid) || setgroups(0, NULL))
+			perr("setgid(2)");
+		if(setuid(p->pw_uid))
+			perr("setuid(2)");
+			
+		if((fd = creat("stdout", 0644)) == -1)
+			perr("creat(2)");
+		dup2(fd, 2);
+		if(!*argv[7])
+			dup2(fd, 1);
+		close(fd);
+		
+		execl(argv[1], argv[1], NULL);
+		perr(argv[1]);
+		return(-1);
+		}
+	}
+}

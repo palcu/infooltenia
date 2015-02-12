@@ -81,7 +81,7 @@ int main() {
                                             // first viable element
     for (int i=0; i<lgMatrice_n; i++)
         for (int j=0; j<lgMatrice_m; j++)
-            if (sol[i][j] && (sol[i][j] < solMin)) {
+            if (!obstacole[i][j] && (sol[i][j] < solMin)) {
                 solMin = sol[i][j];
                 pozX=i;
                 pozY=j;

@@ -1,0 +1,37 @@
+#!/bin/bash
+# general file-compare verifier
+
+COMPARE() {
+	for O in $OFILES; do
+		if [ -z "$1" ]; then
+			echo "FATAL ERROR IN verif: not enough files in KFILES" >&2
+			exit 1
+		fi
+		if [ ! -r "$O" ]; then
+			echo "FATAL ERROR IN verif: missing $O" >&2
+			exit 1
+		fi
+		if diff -q -b $O $1 >/dev/null ; then
+			shift
+		else
+			echo "0 Wrong answer in: $O"
+			exit 0
+		fi
+	done
+	if [ ! -z "$1" ]; then
+		echo "FATAL ERROR IN verif: more files in KFILES: $*" >&2
+		exit 1
+	fi
+	echo "$SCORE Okay!"
+}
+
+if [ -z "$1" ]; then
+	SCORE=10
+else
+	SCORE="$1"
+fi
+if [ -z "$OFILES" ]; then
+	echo "FATAL ERROR IN verif: missing OFILES variable!" >&2
+	exit 1
+fi
+COMPARE $KFILES

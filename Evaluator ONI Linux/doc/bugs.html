@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+    <meta name="ProgId" content="FrontPage.Editor.Document">
+    <title>Bugs - eval</title>
+  </head>
+
+  <body background="images/background.gif">
+    <table border="0">
+      <tr>
+        <td width="33%">
+          <p align="center"><a href="linux.html"><img border="0" src="images/arrow-prev.gif" alt="[prev]" width="32" height="32"></a>
+        </td>
+        <td width="33%">
+          <p align="center"><a href="index.html"><img border="0" src="images/home.gif" alt="[home]" width="32" height="32"></a>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="33%">
+          <p align="center"><b>Linux Installation</b>
+        </td>
+        <td width="33%">
+          <p align="center"><b>Table of Contents</b>
+        </td>
+      </tr>
+
+    </table>
+
+    <h1><img border="0" src="images/hatecomp.gif" alt="[smash!]" align="right" width="142" height="112">Known
+    bugs and problems</h1>
+    <ul>
+      <li>
+        <p>If you perform an evaluation and then <u><b>move</b></u> a file
+        like a source file, a test input file etc. (to replace an old file,
+        or to add it in the first place), the evaluator might not notice the
+        change when it is run again. This is because a move operation
+        preserves the file's time-stamp, so the modify time might very well
+        be before the time of the original evaluation. Unfortunately, fixing
+        this problem would probably make the software much slower. To avoid
+        this problem, <u><b>always copy</b></u> a file to a directory under <tt>eval/</tt>
+        (as opposed to moving it from some outside directory).</p>
+
+      </li>
+      <li>
+        <p>Under Windows, a fatal error might occur if the system is under
+        heavy load. In this case, <tt>eval</tt> will stop with the following
+        message: <tt>FATAL ERROR: shoot! Cygwin bug...</tt></p>
+
+        <p>This is likely a bug in the Cygwin DLL (the pid management code).
+        Hopefully, this will not cause problems, since the grading machine is
+        not normally under such a heavy load.</p>
+
+      </li>
+    </ul>
+  </body>
+</html>
