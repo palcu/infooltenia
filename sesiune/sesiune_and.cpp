@@ -1,12 +1,11 @@
 #include <fstream>
-#include <unordered_map>
 using namespace std;
 
-ifstream f("oite.in");
-ofstream g("oite.out");
+ifstream f("sesiune.in");
+ofstream g("sesiune.out");
 
-int A[1026];
-unordered_map <int, int> pair_sum;
+int A[1005];
+int pair_sum[100005];
 
 int main()
 {
