@@ -40,7 +40,7 @@ Probleme, rezolvari
 - [x] Verificare surse @palcu
 - [x] De ce dau diferit testele 3 si 4 + fix. @palcu
 - [x] reparam testele 3/4
-- [x] sa facem o casuta libera in colturi la 8 teste
+- [ ] sa facem o casuta libera in colturi la 8 teste !!!!!!!!
 
 ## Conuri (Ex Cutii)
 
