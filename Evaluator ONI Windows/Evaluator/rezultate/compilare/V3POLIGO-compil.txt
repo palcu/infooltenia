@@ -1,0 +1,12 @@
+				 BORDEROU DE COMPILARE
+
+ID         Nume            Prenume              Scoala                        
+V3POLIGO   
+
+Sursa:     v3poligon.cpp
+Problema:  poligon
+
+Mesaj compilator:
+
+
+

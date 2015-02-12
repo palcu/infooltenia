@@ -1,0 +1,12 @@
+				 BORDEROU DE COMPILARE
+
+ID         Nume            Prenume              Scoala                        
+STALPINISTO
+
+Sursa:     stalpiNistor.c
+Problema:  stalpi
+
+Mesaj compilator:
+
+
+

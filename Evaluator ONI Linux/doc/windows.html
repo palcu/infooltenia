@@ -1,0 +1,218 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Language" content="en-us">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+    <meta name="ProgId" content="FrontPage.Editor.Document">
+    <title>eval under Windows</title>
+  </head>
+
+  <body background="images/background.gif">
+    <table border="0">
+      <tr>
+        <td width="33%">
+          <p align="center"><a href="intro.html"><img border="0" src="images/arrow-prev.gif" alt="[prev]" width="32" height="32"></a>
+        </td>
+        <td width="33%">
+          <p align="center"><a href="index.html"><img border="0" src="images/home.gif" alt="[home]" width="32" height="32"></a>
+        </td>
+        <td width="34%">
+          <p align="center"><a href="linux.html"><img border="0" src="images/arrow-next.gif" alt="[next]" width="32" height="32"></a>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="33%">
+          <p align="center"><b>Introduction</b>
+        </td>
+        <td width="33%">
+          <p align="center"><b>Table of contents</b>
+        </td>
+        <td width="34%">
+          <p align="center"><b>Linux Installation</b>
+        </td>
+      </tr>
+
+    </table>
+
+    <h1>Windows Installation</h1>
+
+    <h2>Step 1 - Required software</h2>
+    <ol>
+      <li>
+        <p>This software has only been tested under Windows 2000. The
+        software is unlikely to function properly under previous versions of
+        Windows. Running it under newer versions might also prove
+        problematic, especially if they are not based on the NT line of
+        kernels.&nbsp;<br>
+        <br>
+        You probably need to run this software from an administrator account.</p>
+
+      <li>
+        <p>You probably need to install the C and Pascal compilers. The
+        software assumes the needed directories are in your PATH variable, so
+        that the compilers can be called by simply typing &quot;bcc&quot; and
+        &quot;tpc&quot; from the command prompt. See item 1. under
+        &quot;Setting up the machine&quot; if this doesn't work.</p>
+
+      <li>
+        <p>You need to install Cygwin (a POSIX emulation for Windows), before
+        using this software. The official Web page of the Cygwin project is <a href="http://www.cygwin.com/">www.cygwin.com</a>.</p>
+
+        <p>The default installation might prove too restrictive. <a href="cygpacks.html">Click
+        here</a> to see a list of recommended packages.</p>
+
+        <p>Hint: the Cygwin installation software has an option for
+        downloading packages to a local directory. This might come in handy
+        when setting up a machine without Internet access.</p>
+
+        <p><img border="0" src="images/exclamation.gif" align="left" width="32" height="32"> In any
+        case, it is very important that you choose DOS as the &quot;Default
+        File Type&quot; when prompted during the installation process.<br clear="left">
+        </p>
+
+      <li>
+        <a href="http://web.mit.edu/~mip/www/eval/win-eval.tgz">Click here</a>
+        to download the latest version of this software in <tt>.tgz</tt>
+        format.
+        <p><font size="-2">Reminder: by downloading this file, you agree to
+        the terms and conditions set forth by the copyright holder. <a href="index.html#legal">Click
+        here</a> to review these conditions before you proceed.</font>
+      </li>
+    </ol>
+
+    <h2>Step 2 - Setting up the machine</h2>
+    <ol>
+      <li>
+        <p>After you install the Cygwin packages, you need to create an
+        environment variable with the Cygwin installation directory. The way
+        to do this is to go to Control Panel &gt; System, choose the last tab
+        (&quot;Advanced&quot;), and then click &quot;Environment
+        Variables...&quot;. You then want to add a <u><b>system</b></u>
+        variable -- not a user variable (click the &quot;New...&quot; button
+        from the lower half of the dialog). When prompted, enter <tt>CYGROOT</tt>
+        as the variable name and the installation directory as the variable
+        value (e.g. <tt>c:\cygwin</tt>).</p>
+
+        <p>You might also want to edit the <tt>PATH</tt> variable under
+        &quot;User Variables&quot; and add the Borland C and Borland Pascal
+        binary directories if they are not already in the path (see item 2.
+        above).</p>
+
+      </li>
+      <li>
+        <p>It is time to start the <tt>Cygwin</tt> environment (you will need
+        to restart any instances of the shell you had running before changing
+        the environment variables). Issue the following commands:<br>
+        </p>
+
+        <table border="0" width="90%" bgcolor="#000000">
+          <tr>
+            <td width="100%">
+              <font color="#00FF00">
+              <pre>
+
+
+
+~$ cd /
+
+/$ tar vxzf /cygdrive/c/download/win-eval.tgz
+                      ^-- this means c:\download\win-eval.tgz
+
+/$ eval/inst/install.sh
+
+/$ eval/inst/beautify.sh
+
+/$ exit
+</pre>
+              </font>
+            </td>
+          </tr>
+
+        </table>
+        <p>Warning: the beautify script will make some changes to your
+        environment (e.g. add <tt>/etc/profile.d/beauty.sh</tt>), in an
+        attempt to make it more user friendly (e.g. typing <tt>d</tt> will
+        give you a nice colored directory listing). As these changes are not
+        essential to the operation of the program, you may choose not to run <tt>beautify.sh</tt>
+        and preserve your own settings. In any case, you must still run <tt>install.sh</tt>.&nbsp;</p>
+
+      </li>
+      <li>
+        <p>The Cygwin installation process creates some links to <tt>cygwin.bat</tt>,
+        that are used to start the shell (you probably used the &quot;Cygwin&quot;
+        link on the one the desktop to start Cygwin the first time). These
+        links will not work any more, because <tt>install.sh</tt> removed <tt>cygwin.bat</tt>.
+        Hopefully, a new link called &quot;Start cygwin&quot; has been copied
+        to your desktop (if not, you can copy it manually from <tt>cygwin\eval\inst\</tt>).
+        You must use this link to start Cygwin; you should remove the old
+        &quot;Cygwin&quot; link to avoid confusion.</p>
+
+      </li>
+      <li>
+        <p>The default installation includes a sample problem called <tt>sum</tt>,
+        and source files for two contestants: <tt>judge-1</tt> and <tt>judge-2</tt>.
+        It is recommended that you run <tt>eval.sh</tt> using these sample
+        entries to make sure everything is functioning properly. Remember you
+        must restart the Cygwin environment after running <tt>install.sh</tt>
+        using the new link.&nbsp;</p>
+
+      </li>
+    </ol>
+
+    <h2>Step 3 - Using the software</h2>
+    <p>This section only describes Windows specifics. For general operating
+    instructions, see the <a href="index.html">Table of Contents</a>.</p>
+
+    <ul>
+      <li>
+        <p>You cannot grade programs while another DOS Virtual Machine is
+        running in the background. You must close all DOS programs (like the
+        Borland IDEs) before you issue the <tt>eval</tt> command.
+        Furthermore, you may not start a DOS program while <tt>eval</tt> is
+        running.</p>
+
+      </li>
+      <li>
+        <p>Sometimes, the DOS Virtual Machine seems to remain in the
+        background even if no DOS program is running. This happens when you
+        issue DOS commands in the Cygwin shell. To avoid problems, don't call
+        DOS programs from the Cygwin prompt. You can kill such a DOS Virtual
+        Machines gone astray using the Task Manager (right click on the task
+        bar to open it, and look for <u>processes</u> called <tt>ntvdm</tt>).</p>
+
+      </li>
+      <li>
+        <p>It is recommended that you disable the screen saver on the grading
+        machine, to improve the accuracy of the timing.</p>
+
+      </li>
+      <li>
+        <p>In theory, the advanced security measures make it impossible for
+        DOS programs to crash the grading system. The software is, however,
+        designed to handle the case of the grader failing to kill a
+        misbehaving DOS program, or an operating system crash. When you run <tt>eval</tt>
+        again (maybe after resetting the computer), it will pick up from
+        where it was interrupted, awarding zero points for the test that
+        caused the program to crash.</p>
+
+      </li>
+      <li>
+        <p>If you need to write a verifier (instead of using the default
+        file-compare one), you cannot compile it using Borland compilers,
+        because the verifier needs to be a <u><b>Windows</b></u> executable.
+        The recommended approach is to compile your code using <tt>gcc</tt>
+        (which comes with Cygwin). If you write your code in ANSI C, you will
+        be able to develop it using Borland C and compile it using gcc.</p>
+
+      </li>
+      <li>
+        <p>It's quite likely that the Windows distribution will never be a
+        match for the Linux one when it comes to speed or security. Check out
+        <a href="bugs.html">the bugs section</a> for a list of known
+        problems.</p>
+
+      </li>
+    </ul>
+  </body>
+</html>

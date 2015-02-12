@@ -1,0 +1,12 @@
+				 BORDEROU DE COMPILARE
+
+ID         Nume            Prenume              Scoala                        
+2POLIGO    
+
+Sursa:     2poligon.cpp
+Problema:  poligon
+
+Mesaj compilator:
+
+
+

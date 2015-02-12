@@ -1,0 +1,12 @@
+				 BORDEROU DE COMPILARE
+
+ID         Nume            Prenume              Scoala                        
+7POLIGO    
+
+Sursa:     7poligon.cpp
+Problema:  poligon
+
+Mesaj compilator:
+
+
+

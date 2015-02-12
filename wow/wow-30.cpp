@@ -16,8 +16,8 @@ static const int NMAX = 100;
 static const int dx[] = { 0, 1, 0, -1 };
 static const int dy[] = { 1, 0, -1, 0 };
 
-int N; // Latura labirintului
-int M; // Numarul de persoane
+int N, M; // Latura labirintului
+int nrPers; //
 int labirint[ NMAX ][ NMAX ]; // Labirintul
 int distanta[ NMAX ][ NMAX ]; // Matrice de distanta data de punctul de start
 Punct sursa, destinatie;
@@ -25,7 +25,7 @@ queue< pair<Punct,int> > Q; // Coada pentru Lee. Punctul vizitat si costul de a 
 
 // Verifica daca un punct este in interiorul labirintului
 inline bool inLabirint(Punct punct) {
-    return !(punct.first < 0 || punct.first >= N || punct.second < 0 || punct.second >= N);
+    return !(punct.first < 0 || punct.first >= N || punct.second < 0 || punct.second >= M);
 }
 
 // Face un pas in algoritmul lui Lee. Primeste un puct si viziteaza toate cele 4 puncte adiacente.
@@ -56,15 +56,15 @@ int main() {
     freopen("wow.out", "w", stdout);
 
     // Citirea datelor
-    scanf("%d %d\n", &N, &M);
+    scanf("%d %d %d\n", &N, &M, &nrPers);
 
-    if (M != 2) {
+    if (nrPers != 2) {
         printf("Am rezolvat doar pentru 2 persoane in labirint ...");
         return 0;
     }
 
     for (int i = 0; i < N; ++i) {
-        for (int j = 0; j < N; ++j) {
+        for (int j = 0; j < M; ++j) {
             scanf("%d", &labirint[i][j]);
         }
     }

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<oji>
+  <problema>
+    <nume>stalpi</nume>
+    <limita_timp>700</limita_timp>
+    <limita_memorie>4</limita_memorie>
+    <limita_stiva>2</limita_stiva>
+    <limita_dimens_sursa>5</limita_dimens_sursa>
+  </problema>
+  <problema>
+    <nume>tort</nume>
+    <limita_timp>500</limita_timp>
+    <limita_memorie>4</limita_memorie>
+    <limita_stiva>2</limita_stiva>
+    <limita_dimens_sursa>5</limita_dimens_sursa>
+  </problema>
+  <problema>
+    <nume>poligon</nume>
+    <limita_timp>400</limita_timp>
+    <limita_memorie>2</limita_memorie>
+    <limita_stiva>2</limita_stiva>
+    <limita_dimens_sursa>5</limita_dimens_sursa>
+  </problema>
+</oji>
