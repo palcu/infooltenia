@@ -2,8 +2,8 @@ from sh import cp, rm
 import sh
 import os
 
-cp('../wow-100.cpp', '.')
-os.system('g++ wow-100.cpp')
+cp('../wow-palcu.cpp', '.')
+os.system('g++ wow-palcu.cpp')
 
 filename = 'grader_test'
 for i in range(1, 11):
@@ -14,5 +14,5 @@ for i in range(1, 11):
 
 for extension in ['in', 'out']:
   rm('wow.' + extension)
-rm('wow-100.cpp')
+rm('wow-palcu.cpp')
 rm('a.out')

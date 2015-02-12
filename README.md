@@ -17,7 +17,9 @@ Probleme, rezolvari
 - [x] Alex se uita peste celelalte care nu merg
 - [x] lipsa_n_patrat ia doar 10 puncte, restul incorect. Afisare cu bug
 - [x] lipsa-vector.caracteristic ia doar 20 de puncte, restul incorect. Afisarea lui Robert.
-- [ ] lipsa-vector.caracteristic pica 2 teste
+- [x] lipsa-vector.caracteristic pica 2 teste
+- [x] verific la care dadeau incorect @palcu
+- [x] daca pun limita de memorie ies punctele cum trebuie @palcu
 
 ## Conjectura
 
@@ -36,16 +38,21 @@ Probleme, rezolvari
 - [x] Enunt HTML cu .campion template @hasnarobert
 - [x] teste @andrei14vl
 - [x] Verificare surse @palcu
-- [ ] De ce dau diferit testele 3 si 4 + fix. @andrei14vl
+- [x] De ce dau diferit testele 3 si 4 + fix. @palcu
+- [x] reparam testele 3/4
+- [ ] sa facem o casuta libera in colturi la 8 teste !!!!!!!!
+- [ ] reparam testele wow din exemplu
+- [x] testele au discrepanta de timp. Sa ia pe cel mai lent ca exemplu
 
 ## Conuri (Ex Cutii)
 
 - [x] sursa 100 @andrei14vl
 - [x] sursa 100 @hasnarobert
-- [ ] sursa 30 @palcu backtracking
+- [x] sursa 30 @palcu backtracking
 - [x] sursa 50 N^2 @rhasna
 - [x] teste @andrei14vl
 - [x] Enunt HTML cu .campion template @hasnarobert
+- [x] @andrei14vl a reparat testele la conuri
 
 # Echipaje
 
@@ -55,9 +62,11 @@ Probleme, rezolvari
 - [x] sursa 100 @andrei14vl
 - [ ] sursa 100
 - [ ] sursa x
+- [ ] teste
 
 ## Calup
 
 - [ ] sursa 100 @andrei14vl
 - [ ] sursa 100
 - [ ] sursa x
+- [ ] teste

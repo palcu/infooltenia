@@ -1,8 +1,8 @@
 from random import shuffle
 
 
-n = 8000
-m = 90
+n = 250000
+m = 2
 print("{0} {1}".format(n, m))
 
 to_remove = range(1, n+1)

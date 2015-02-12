@@ -22,13 +22,18 @@ int main() {
     scanf("%d %d", &n, &nSecventeIntrare);
 
     for (int i=0; i<nSecventeIntrare; i++) {
-        int sum = 0;
+        unsigned long long sum = 0;
         for (int j=0; j<n-1; j++) {
             int x;
             scanf("%d", &x);
             sum += x;
         }
-        lipsa[i] = n * (n+1) / 2 - sum;
+        unsigned long long bigger;
+        if (n%2 == 0)
+            bigger = n/2 * (n+1);
+        else
+            bigger = (n+1)/2 * n;
+        lipsa[i] = bigger - sum;
     }
 
     bool isSorted = false;

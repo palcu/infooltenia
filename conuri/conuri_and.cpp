@@ -1,11 +1,10 @@
 #include <fstream>
-#include <unordered_map>
 using namespace std;
 
 ifstream f("conuri.in");
 ofstream g("conuri.out");
 
-unordered_map<int, int> max_length;
+int max_length[100002];
 
 int main() {
     int N, r1, r2;
