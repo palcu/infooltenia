@@ -1,0 +1,17 @@
+				 BORDEROU DE COMPILARE
+
+ID         Nume            Prenume              Scoala                        
+DOR        
+
+Sursa:     doru.cpp
+Problema:  stalpi
+
+Mesaj compilator:
+In file included from C:/OJI/MinGWStudio/MinGW/include/c++/3.3.1/backward/fstream.h:31,
+                 from doru.cpp:1:
+C:/OJI/MinGWStudio/MinGW/include/c++/3.3.1/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <sstream> instead of the deprecated header <strstream.h>. To disable this warning use -Wno-deprecated.
+doru.cpp: In function `void rezolva()':
+doru.cpp:27: warning: unused variable `long int j'
+
+
+

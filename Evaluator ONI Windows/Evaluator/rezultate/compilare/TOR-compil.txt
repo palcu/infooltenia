@@ -1,0 +1,14 @@
+				 BORDEROU DE COMPILARE
+
+ID         Nume            Prenume              Scoala                        
+TOR        
+
+Sursa:     tort.c
+Problema:  tort
+
+Mesaj compilator:
+tort.c: In function `main':
+tort.c:5: warning: `np' might be used uninitialized in this function
+
+
+

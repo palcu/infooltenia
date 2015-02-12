@@ -1,0 +1,16 @@
+				 BORDEROU DE COMPILARE
+
+ID         Nume            Prenume              Scoala                        
+V2POLIGO   
+
+Sursa:     v2poligon.cpp
+Problema:  poligon
+
+Mesaj compilator:
+v2poligon.cpp: In function `int qsort(int, int)':
+v2poligon.cpp:37: warning: control reaches end of non-void function
+v2poligon.cpp: In function `int main()':
+v2poligon.cpp:59: warning: unused variable `int j'
+
+
+

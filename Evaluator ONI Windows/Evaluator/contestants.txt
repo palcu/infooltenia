@@ -1,0 +1,91 @@
+ID	Nume	Prenume	Scoala
+901	Alexandru	Florin Lucian	Iasi	
+902	Andreescu	Mihai Iulian	Bucuresti	
+903	Apostol	Dimitri	Constanta	
+904	Arnautu 	Alexandru Rares	Neamt	
+905	Baluta 	Alexandru	Olt	
+906	Baluta	Ciprian	Braila	
+907	Berbecariu 	Flaviu Florin	Bistrita Nasaud	
+908	Brinzea 	Razvan-Stefan	Bacau	
+909	Broicu 	Alexandru	Gorj	
+910	Butiu 	Alexandru Octavian	Arad	
+911	Casapopol 	Eliza	Arges	
+912	Cernat 	Catalin Stefan	Vaslui	
+913	Chirnogea 	Catalin Adrian 	Sibiu	
+914	Constantin 	Sorin	Olt	
+915	Cretu 	Irina	Suceava	
+916	Decean 	Ovidiu-Ciprian	Alba	
+917	Despotovici 	Mihai	Vrancea	
+918	Dimitriu 	Petru	Galati	
+919	Dragoi 	Stefan	Buzau	
+920	Filimon 	Marta Diana	Iasi	
+921	Fodor 	Dan Horatiu	Brasov	
+922	Gafton 	Paul Adrian	Vrancea	
+923	Gal 	Beni	Covasna	
+924	Gaujaneanu 	Andrei Vladut	Giurgiu	
+925	Gheorghe 	Mihai-Dan	Bucuresti	
+926	Ghilinta 	Daniel	Buzau	
+927	Ghiuta 	Andrei	Vrancea	
+928	Heidelbacher 	Andrei	Timis	
+929	Ilies	Norbert Mario	Neamt	
+930	Ionita 	Costel Cosmin	Giurgiu	
+931	Iorga 	Andreea	Dambovita	
+932	Kolumban-Antal 	Gyorgy	Harghita	
+933	Linte 	Cosmin Bogdan	Tulcea	
+934	Lupean 	Horatiu Stefan	Sibiu	
+935	Madar 	Alexandru	Tulcea	
+936	Manghiuc 	Bogdan Adrian	Suceava	
+937	Marcu 	Stefan Ovidiu	Suceava	
+938	Mardale 	Andrei	Braila	
+939	Marin 	Alexandru	Ialomita	
+940	Matei 	Andrei	Prahova	
+941	Mihalache 	Constantin	Bacau	
+942	Mirica 	Aurelian Gabriel	Constanta	
+943	Mocanu 	Stefan Alexandru	Suceava	
+944	Murtaza 	Alexandru	Dolj	
+945	Muscalu 	Stefan Gabriel	Arges	
+946	Neatu 	Darius Florentin	Teleorman	
+947	Nemtuc 	Dumitru	Botosani	
+948	Nica 	Dan-Adrian	Alba	
+949	Nistor 	Sergiu	Cluj	
+950	Oancea 	Horatiu	Alba	
+951	Oancea 	Maria Isabela	Arges	
+952	Oarna 	Alexandru	Constanta	
+953	Olariu 	Ciprian	Vaslui	
+954	Onesim 	Robert-Ioan	Iasi	
+955	Onutu 	Codrin Stefan	Iasi	
+956	Palalogos 	Ioan Eusebiu	Bistrita Nasaud	
+957	Peptan 	Alexandru Florin	Caras-Severin	
+958	Petcu 	Ioan Vlad	Bucuresti	
+959	Peter 	Botond	Harghita	
+960	Popa 	Stefan Adrian	Bacau	
+961	Popescu 	Alexandru Cristian	Dambovita	
+962	Popescu 	Bogdan Gabriel	Mehedinti	
+963	Posdarascu 	Eugenie Daniel	Bucuresti	
+964	Rad 	Emanuel	Mures	
+965	Radu 	Andrei	Bucuresti	
+966	Sandu 	Cristian	Galati	
+967	Savulescu 	Roxana Mihaela	Prahova	
+968	Sirbu 	Alexandru	Valcea	
+969	Sortan 	Bogdan	Salaj	
+970	Stan 	Cristiana	Arges	
+971	Stepan 	Patrik Aurel	Arad	
+972	Strechie 	Lorena	Neamt	
+973	Suciu 	Ioan	Valcea	
+974	Szasz 	Radu Andrei	Timis	
+975	Szasz 	Tamas-Csaba	Cluj	
+976	Taloi 	Bogdan - Cristian	Bucuresti	
+977	Terhes 	Raul	Satu Mare	
+978	Tirla 	Alin-Florin	Cluj	
+979	Trifan 	Mircea Mihai	Vaslui	
+980	Tucar 	Stefania Liana	Iasi	
+981	Ungureanu 	Remus Dan	Galati	
+982	Ungureanu 	Silviu	Iasi	
+983	Vacarasu 	Ioana	Bacau	
+984	Vekony 	Attila	Covasna	
+985	Virtan 	Eugen Alexandru	Gorj	
+986	Vlad 	Costin	Prahova	
+987	Voina 	Teodora	Hunedoara	
+988	Zamfir 	Vlad	Arges	
+989	Zegreanu 	Cristian Ioan	Sibiu	
+				
