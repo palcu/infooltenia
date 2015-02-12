@@ -41,6 +41,8 @@ Probleme, rezolvari
 - [x] De ce dau diferit testele 3 si 4 + fix. @palcu
 - [x] reparam testele 3/4
 - [ ] sa facem o casuta libera in colturi la 8 teste !!!!!!!!
+- [ ] reparam testele wow din exemplu
+- [x] testele au discrepanta de timp. Sa ia pe cel mai lent ca exemplu
 
 ## Conuri (Ex Cutii)
 
@@ -50,6 +52,7 @@ Probleme, rezolvari
 - [x] sursa 50 N^2 @rhasna
 - [x] teste @andrei14vl
 - [x] Enunt HTML cu .campion template @hasnarobert
+- [x] @andrei14vl a reparat testele la conuri
 
 # Echipaje
 
