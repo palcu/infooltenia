@@ -60,8 +60,10 @@ Probleme, rezolvari
 
 - [x] enunt
 - [x] sursa 100 @andrei14vl
-- [ ] sursa 100
-- [ ] sursa x
+- [ ] sursa 100 cu sortare @andrei14vl
+- [ ] sursa 100 @hasnarobert
+- [ ] sursa cu 3 for-uri @palcu
+- [ ] sursa cu 2 for-uri @palcu
 - [ ] teste
 
 ## Calup
