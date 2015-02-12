@@ -40,8 +40,8 @@ Probleme, rezolvari
 - [x] Verificare surse @palcu
 - [x] De ce dau diferit testele 3 si 4 + fix. @palcu
 - [x] reparam testele 3/4
-- [ ] sa facem o casuta libera in colturi la 8 teste !!!!!!!!
-- [ ] reparam testele wow din exemplu
+- [x] sa facem o casuta libera in colturi la 8 teste
+- [x] reparam testele wow din exemplu
 - [x] testele au discrepanta de timp. Sa ia pe cel mai lent ca exemplu
 
 ## Conuri (Ex Cutii)
