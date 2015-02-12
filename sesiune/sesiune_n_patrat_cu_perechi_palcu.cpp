@@ -4,7 +4,7 @@ using namespace std;
 
 const int NMAX = 1000;
 int v[NMAX];
-int pairs[NMAX*NMAX][3], nPairs;
+int pairs[NMAX*(NMAX+1)/2][3], nPairs;
 
 int main() {
     freopen("sesiune.in", "r", stdin);
@@ -36,12 +36,9 @@ int main() {
                         }
                 if (diferite) {
                     sol ++;
-                    printf("%d%d\n", pairs[i][1], pairs[i][2]);
-                    printf("%d%d\n", pairs[j][1], pairs[j][2]);
-                    printf("\n");
                 }
             }
 
-    printf("%d\n", sol);
+    printf("%d\n", sol/3);
     return 0;
 }
