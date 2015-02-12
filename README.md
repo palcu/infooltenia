@@ -62,7 +62,7 @@ Probleme, rezolvari
 - [x] sursa 100 @andrei14vl
 - [ ] sursa 100
 - [ ] sursa x
-- [ ]
+- [ ] teste
 
 ## Calup
 
