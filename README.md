@@ -18,8 +18,8 @@ Probleme, rezolvari
 - [x] lipsa_n_patrat ia doar 10 puncte, restul incorect. Afisare cu bug
 - [x] lipsa-vector.caracteristic ia doar 20 de puncte, restul incorect. Afisarea lui Robert.
 - [x] lipsa-vector.caracteristic pica 2 teste
-- [ ] verific la care dadeau incorect
-- [ ] daca pun limita de memorie ies punctele cum trebuie
+- [x] verific la care dadeau incorect @palcu
+- [x] daca pun limita de memorie ies punctele cum trebuie @palcu
 
 ## Conjectura
 
