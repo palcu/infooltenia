@@ -17,6 +17,13 @@ Valorile nu sunt intr-o anumita ordine.
 
 Fisierul de ieșire va conține un număr natural ce reprezintă numărul de modalități în care pot fi selectate cele 4 numere.
 
+## Restricții
+
+```
+1 <= N <= ??
+4 <= S <= ??
+```
+
 ### sesiune.in
 
 ```
