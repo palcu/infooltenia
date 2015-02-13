@@ -60,11 +60,12 @@ Probleme, rezolvari
 
 - [x] enunt
 - [x] sursa 100 @andrei14vl
-- [ ] sursa 100 cu sortare @andrei14vl
-- [ ] sursa 100 @hasnarobert
-- [ ] sursa cu 3 for-uri @palcu
-- [ ] sursa cu 2 for-uri @palcu
-- [ ] teste
+- [x] sursa 100 cu sortare @andrei14vl
+- [x] sursa 100 @hasnarobert
+- [x] sursa cu 4 for-uri @palcu
+- [x] sursa cu aproape 4 for-uri @palcu
+- [x] sursa N^3
+- [x] teste
 
 ## Calup
 
