@@ -2,7 +2,7 @@ from sh import cp, rm, diff, ErrorReturnCode
 import sh
 import os
 
-SURSA_VERIFICATA = 'sesiune-N2logN.cpp'
+SURSA_VERIFICATA = 'sesiune-N3.cpp'
 
 cp('../' + SURSA_VERIFICATA, '.')
 os.system('g++ ' + SURSA_VERIFICATA + ' -O3')
