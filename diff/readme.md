@@ -4,8 +4,10 @@ Se cere sa se faca diff intre ele. Cat mai rapid :))
 
 Eventual sa facem pe fiecare linie un diff. 
 Ceva de genul:
+```
     abcxxxtt
     abcblablaxxxttt
+```
 
     Diff-ul ar trebui sa returneze ca secventa "blabla" a fost adaugata in al doilea sir.
 
