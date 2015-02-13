@@ -1,19 +1,21 @@
 # Sesiune
 
-Legenda spune ca vei trece examenele, daca ai la tine un trifoi cu 4 foi.
+Legenda în Facultatea de Matematică și Informatică spune că vei trece examenul de Sisteme Distribuite, dacă ai la tine un trifoi cu 4 foi.
 
-Tehnologia a evoluat totusi si oricine poate construi foi de trifoi cu o imprimanta 3D. Astfel au aparut trifoi care au numere inscriptionate pe foi. Acest lucru a facut ca si legenda sa se actualizeze. Acum ai noroc la examene doar cu un trifoi care are suma numerelor de pe foi egala cu S.
+Tehnologia a evoluat totuși si oricine poate construi un trifoi cu o imprimantă 3D. Astfel, în secolul 21 au apărut trifoiuri care au și numere inscripționate pe foi. Acest lucru a facut ca și legenda să se actualizeze.
 
-O imprimanta are la dispozitie doar numere dintr.o anumita multime. Dandu.se multimea de numere pe care imprimantele 3D le pot folosi, in cate moduri se pot alege 4 dintre ele, a caror suma sa fie S, incat sa formeze un trifoi indeajuns de norocos.
+Acum ai noroc la examen dacă ai un trifoi care are suma numerelor de pe foi egala cu un număr S.
+
+O imprimantă are la dispozitie doar numere dintr-o anumită mulțime. Dându-se mulțimea de numere pe care imprimantele 3D le pot folosi, în câte moduri se pot alege oricare 4 dintre ele, astfel încât suma lor să fie S.
 
 ## Date de intrare
 
-Pe prima linie vor fi doua numere naturale N, S, urmate pe a doua linie de cele N valori ce pot fi printate.
+Pe prima linie vor fi două numere naturale, N și S, urmate pe a doua linie de cele N valori ce pot fi printate.
 Valorile nu sunt intr-o anumita ordine.
 
-## Date de iesire
+## Date de ieșire
 
-Fisierul de iesire va contine un numar natural ce reprezinta numarul de modalitati in care pot fi selectate 4 numere, a caror suma sa fie S.
+Fisierul de ieșire va conține un număr natural ce reprezintă numărul de modalități în care pot fi selectate cele 4 numere.
 
 ### sesiune.in
 
