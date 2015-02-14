@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-#define NMAX 100025
-#define KMAX 10000000
+#define NMAX 1001
+#define KMAX 1000001
 
 int N, K;
-int V[NMAX];
-int H[KMAX];
-int cnt[KMAX];
+int V[NMAX+1];
+int H[KMAX*2+1];
+int cnt[KMAX*2+1];
 
 int main() {
     freopen("sesiune.in", "r", stdin);
@@ -34,13 +34,13 @@ int main() {
 
                 cnt[V[t]]++;
                 int s = V[i] + V[j] + V[t];
-                
+
                 if (s < K) {
                     // printf("Remaining %d's for %d %d %d : %d\n", K - s, i, j, t, H[K - s] - cnt[K - s]);
                     sol = sol + H[K - s] - cnt[K - s];
                 }
 
-                cnt[V[t]]--; 
+                cnt[V[t]]--;
             }
             cnt[V[j]]--;
         }

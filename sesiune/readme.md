@@ -20,8 +20,8 @@ Fisierul de ieșire va conține un număr natural ce reprezintă numărul de mod
 ## Restricții
 
 ```
-1 <= N <= ??
-4 <= S <= ??
+1 <= N <= 1000
+4 <= S <= 1000000
 ```
 
 ### sesiune.in

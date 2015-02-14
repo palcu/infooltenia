@@ -4,8 +4,11 @@ using namespace std;
 ifstream f("sesiune.in");
 ofstream g("sesiune.out");
 
-int A[1005];
-int pair_sum[100005];
+int SMAX = 1000001,
+    NMAX = 1001;
+
+int A[NMAX];
+int pair_sum[SMAX*2];
 
 int main()
 {
