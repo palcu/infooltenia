@@ -1,6 +1,6 @@
 # Teleport
 
-Bobut și prietena Neytiri lui au cazut intr-o capacana intinsa de fratii lor extraterestri, si sunt in pericol. Bobut s-a trezit la capatul unui coridor foarte lung impartit in `N` celule. La sfârșitul coridorului se află prietena lui care, îl așteaptă de Valentine's Day să meargă la un concert romantic.
+Bobut și prietena lui Neytiri au cazut intr-o capacana intinsa de fratii lor extraterestri, si sunt in pericol. Bobut s-a trezit la capatul unui coridor foarte lung impartit in `N` celule. La sfârșitul coridorului se află prietena lui care, îl așteaptă de Valentine's Day să meargă la un concert romantic.
 Incercand sa scape, Bobut a descoperit toate proprietatile speciale ale coridorului:
 
 * Celulele din coridor sunt numerotate de la `0` la `N-1`.
