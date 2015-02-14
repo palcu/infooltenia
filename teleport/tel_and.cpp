@@ -19,7 +19,7 @@ int main() {
             if (i + 1 <= N + 1 && sol[i + 1][cheat_used] > sol[i][cheat_used] + 1)
                 sol[i+1][cheat_used] = sol[i][cheat_used] + 1;
             if (i + x <= N + 1 && sol[i + x][cheat_used] > sol[i][cheat_used] + 1)
-                sol[i + x][cheat_used] > sol[i][cheat_used] + 1;
+                sol[i + x][cheat_used] = sol[i][cheat_used] + 1;
             if (i + cheat_steps <= N + 1 && cheat_used < nr_cheats && sol[i + cheat_steps][cheat_used + 1] > sol[i][cheat_used] + 1)
                 sol[i + cheat_steps][cheat_used + 1] = sol[i][cheat_used] + 1;
         }

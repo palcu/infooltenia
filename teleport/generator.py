@@ -1,8 +1,8 @@
 from random import randint
 
-N = 100
+N = 10000
 MAX_ITEM_ARRAY = min(100, N)
-nCheats = randint(1, 11)
+nCheats = randint(0, 3)
 cheatSize = randint(2, MAX_ITEM_ARRAY + 1)
 
 print N, nCheats, cheatSize
