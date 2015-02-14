@@ -1,3 +1,6 @@
+// @palcu
+// InfoOltenia 2015, teleport, backtracking
+
 #include <cstdio>
 #include <algorithm>
 
