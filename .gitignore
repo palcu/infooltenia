@@ -25,3 +25,6 @@
 # Executables
 *.exe
 *.app
+
+# Andrei's VIM shit
+*.swp
