@@ -1,47 +1,47 @@
 # Teleport
 
-Bobut a cazut intr-o capacana intinsa de fratii lui extraterestri, si este in pericol. El s-a trezit la capatul unui coridor foarte lung impartit in `N` celule. Pentru a scapa el trebuie sa ajunga dincolo de capatul opus. 
-Incercand sa scape, Bobut a descoperit toate proprietatile speciale ale coridorului:
+Bobut și prietena lui Neytiri au căzut într-o capacană întinsă de frații lor extratereștri, și sunt în pericol. Bobut s-a trezit la capătul unui coridor foarte lung împarțit în `N` celule. La sfârșitul coridorului se află prietena lui care, îl așteaptă de Valentine's Day să meargă la un concert romantic.
+Încercând să scape, Bobut a descoperit toate proprietățile speciale ale coridorului:
 
 * Celulele din coridor sunt numerotate de la `0` la `N-1`.
-* El s-a trezit in celula cu numarul `0`.
-* O data ce a ajuns intr-o celula, este imposibil sa ajunga intr-o celula cu numar de ordine mai mic.
-* In fiecare celula este scris un numar pe podea.
+* El s-a trezit în celula cu numărul `0`.
+* O dată ce a ajuns într-o celulă, este imposibil să ajungă într-o celulă cu număr de ordine mai mic.
+* În fiecare celulă este scris un număr pe podea.
 * Sunt posibile 3 moduri de deplasare:
-  * Facand un pas, el se poate deplasa in celula cu numarul de ordine consecutiv.
-  * Din orice celula el se poate teleporta `V` celule mai in fata, unde `V` este numarul scris pe podeaua celulei in care se afla.
-  * Teleportorul lui personal il poate teleporta `K` celula mai in fata, dar din pacate mai are baterie pentru `M` astfel de teleportari
+  * Făcând un pas, el se poate deplasa în celulă cu numărul de ordine consecutiv.
+  * Din orice celulă el se poate teleporta `V` celule mai in față, unde `V` este numărul scris pe podeaua celulei în care se află.
+  * Teleportorul lui personal îl poate teleporta `K` celule mai in față, dar din păcate mai are baterie pentru `M` astfel de teleportări.
 
-Bobut nu doar ca vrea sa scape, ci vrea sa scape trecand prin cat mai putine celule.
+Bobut nu doar că vrea sa scape, vrea să ajungă în numărul cel mai mic de pași la prietena lui.
 
-# Cerinta
+# Cerință
 
-Scrieti un program care determina care este numarul minim de celule prin care Bobut trebuie sa treaca astfel incat sa ajunga exact dupa ultima celula din coridor.
+Scrieți un program care determină care este numărul minim de celule prin care Bobut trebuie să treacă astfel încât să ajungă exact după ultima celula din coridor.
 
 # Date de intrare
 
-Fisierul de intrare `teleport.in` contine pe prima linie 3 numere naturale `N`, `M` si `K` reprezentand numarul de celule din coridor, numarul de teleportari disponibile in teleportorul lui personal respectiv lungimea unei teleportari personale.
-Pe a doua linie sunt N numere separate prin spatiu reprezentand numerele scrise in celulele coridorului.
+Fișierul de intrare `teleport.in` conține pe prima linie 3 numere naturale `N`, `M` și `K` reprezentând numărul de celule din coridor, numărul de teleportări disponibile în teleportorul lui personal respectiv lungimea unei teleportări personale.
+Pe a doua linie sunt N numere separate prin spațiu reprezentând numerele scrise în celulele coridorului.
 
-# Date de iesire
+# Date de ieșire
 
-Fisierul de iesire `teleport.out` va contine un singur numar reprezentand numarul minim de celule prin care Bobut trebuie sa treaca pana ajunge in afara coridorului.
+Fișierul de ieșire `teleport.out` va conține un singur număr, reprezentând numărul minim de celule prin care Bobut trebuie să treacă până ajunge în afară coridorului.
 
-# Restrictii
+# Restricții
 
 * 1 <= N <= 100000
 * 0 <= M <= 3
 * Pentru 30% din teste, valoarea lui M este 0
-* 0 <= Numarul scris pe podea <= 100
+* 0 <= Numărul scris pe podea <= 100
 
 # Exemple
 
-in: 
+in:
 10 1 5
 2 8 3 1 0 3 2 2 2 2
 
 out:
 3
 
-Sunt 2 moduri de a iesi in 3 pasi. 1 (pas) 2 ( teleport podea) 10 (pas) 11
-sau 1 (teleport podea) 3 (teleport podea) 6 ( teleport personal ) 11
+Sunt 2 moduri de a ieși în 3 pași. 1 (pas) 2 (teleport podea) 10 (pas) 11
+sau 1 (teleport podea) 3 (teleport podea) 6 (teleport personal) 11
