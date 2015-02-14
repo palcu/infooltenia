@@ -1,1 +1,1 @@
-Pentru a găsi soluția, trebuie efectiv să simulăm algoritmul pas cu pas. Observăm că odată ce algoritmul trece de aproximativ 10 iterații, numerele vor deveni prea mari să încapă în tipul de date "long long".
+Pentru a găsi soluția, trebuie efectiv să simulăm algoritmul pas cu pas. Observăm că odată ce algoritmul trece de aproximativ 10 iterații, numerele vor deveni prea mari să încapă în tipul de date "long long". Este necesare utilizarea numerelor mari pentru a obtine 100 de puncte.

@@ -1,3 +1,3 @@
-Pentru 30 de puncte vom folosi algoritmul lui Lee pentru a determina distanța de la unul dintre caractere la celălalt. Nu contează de la care să începem pentru că distanța va fi egală.
+Pentru 30 de puncte vom folosi algoritmul lui Lee pentru a determina distanța de la unul dintre caractere la celălalt. Nu contează de la care începem pentru că distanța va fi egală.
 
 Pentru 100 de puncte, vom folosi algoritmul lui Lee pentru fiecare caracter și vom aduna matricile rezultate. Apoi vom selecta cea mai mică celulă din matrice prin care toate caracterele au trecut. Dacă uităm de ce-a de-a două condiție, atunci vom luat maxim 20 de puncte.

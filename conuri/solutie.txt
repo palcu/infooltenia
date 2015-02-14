@@ -1,9 +1,5 @@
 Solutie Conuri 
 
-O(N^2) - Pentru fiecare trunchi vom retine lungimea maxima a subsirurilor care se termina in r1, respectiv r2, sol[i][1], sol[i][2].
-Lungimea maxima a trunchiului i pentru o anumita raza va fi determinata alegand maximul solutiilor anterioare care au in varf cealalta raza a trunchiului i.
-Pentru fiecare trunchi, iteram prin trunchiurile anterioare care au o baza r1, respectiv r2 si actualizam solutia pentru r2 respectiv r1.
-
 O(N) - Pentru fiecare baza a unui trunchi calculam lungimea celui mai lung subsir care are in varf aceasta baza.
  Daca avem un trunchi cu razele r1 si r2, lungimea subsirului care se termina in r1 va fi solutia curenta(obtinuta pentru subsirurile anterioare) pentru raza r2.
  Pentru fiecare trunchi:
@@ -11,5 +7,9 @@ O(N) - Pentru fiecare baza a unui trunchi calculam lungimea celui mai lung subsi
      sol_r2 = sol[r1] + 1;
      sol[r1] = max(sol[r1], sol_r1);
      sol[r2] = max(sol[r2], sol_r2);
+
+O(N^2) - Pentru fiecare trunchi vom retine lungimea maxima a subsirurilor care se termina in r1, respectiv r2, sol[i][1], sol[i][2].
+Lungimea maxima a trunchiului i pentru o anumita raza va fi determinata alegand maximul solutiilor anterioare care au in varf cealalta raza a trunchiului i.
+Pentru fiecare trunchi, iteram prin trunchiurile anterioare care au o baza r1, respectiv r2 si actualizam solutia pentru r2 respectiv r1.
  
 Stud. Andrei Vacaroiu
