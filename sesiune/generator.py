@@ -1,14 +1,16 @@
 from random import randint, shuffle
 
-N = 6
+N = 1000
+MAX_S = 1000000
 
-v = [randint(1, N) for _ in range(4)]
+v = [randint(1000, 100000) for _ in range(4)]
 S = sum(v)
 
-print N, S
-for _ in range(N-4):
-  v.append(randint(1, N))
+while len(v)<N:
+  v.append(randint(1, 100))
+v.pop()
 shuffle(v)
 
+print len(v), S
 for _ in v:
   print _,
