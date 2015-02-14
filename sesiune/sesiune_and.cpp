@@ -24,11 +24,15 @@ int main()
     for (int it_new1 = 3; it_new1 < N; ++it_new1) {
 
         for (int it_new2 = it_new1 + 1; it_new2 <= N; ++it_new2) {
-            total += pair_sum[S - A[it_new1] - A[it_new2]]; //query S - current_pair
+            int sum_i_need = S - A[it_new1] - A[it_new2];
+            if (sum_i_need >= 0 && sum_i_need < SMAX * 2)
+                total += pair_sum[sum_i_need]; //query S - current_pair
         }
 
         for (int it_new2 = it_new1 - 1; it_new2 > 0; --it_new2) {
-            ++pair_sum[A[it_new1] + A[it_new2]];   //update using current pair
+            int sum_i_get = A[it_new1] + A[it_new2];
+            if (sum_i_get <= S)
+                ++pair_sum[sum_i_get];   //update using current pair
         }
     }
 
