@@ -4,7 +4,7 @@ Legenda în Facultatea de Matematică și Informatică spune că vei trece exame
 
 Tehnologia a evoluat totuși si oricine poate construi un trifoi cu o imprimantă 3D. Astfel, în secolul 21 au apărut trifoiuri care au și numere inscripționate pe foi. Acest lucru a facut ca și legenda să se actualizeze.
 
-Acum ai noroc la examen dacă ai un trifoi care are suma numerelor de pe foi egala cu un număr S.
+Acum ai noroc la examen dacă ai un trifoi care are suma numerelor de pe foi egală cu un număr S.
 
 O imprimantă are la dispozitie doar numere dintr-o anumită mulțime. Dându-se mulțimea de numere pe care imprimantele 3D le pot folosi, în câte moduri se pot alege oricare 4 dintre ele, astfel încât suma lor să fie S.
 
@@ -20,8 +20,8 @@ Fisierul de ieșire va conține un număr natural ce reprezintă numărul de mod
 ## Restricții
 
 ```
-1 <= N <= ??
-4 <= S <= ??
+1 <= N <= 1000
+4 <= S <= 1000000
 ```
 
 ### sesiune.in

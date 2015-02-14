@@ -8,5 +8,8 @@ cheatSize = randint(2, MAX_ITEM_ARRAY + 1)
 
 print N, nCheats, cheatSize
 
+v = []
 for i in range(N):
-  print randint(1, MAX_ITEM_ARRAY + 1),
+  v.append(str(randint(1, MAX_ITEM_ARRAY + 1)))
+
+print " ".join(v)
