@@ -69,7 +69,7 @@ Probleme, rezolvari
 
 ## Teleport
 
-- [x] sursa 100 @hasnarobert
-- [ ] sursa 100 @andrei14vl
+- [x] sursa 100 @hasnarobert O(N * constanta)
+- [x] sursa 100 @andrei14vl O(N)
 - [x] sursa back @palcu
-- [ ] teste
+- [x] teste
