@@ -67,9 +67,9 @@ Probleme, rezolvari
 - [x] sursa N^3
 - [x] teste
 
-## Calup
+## Teleport
 
+- [x] sursa 100 @hasnarobert
 - [ ] sursa 100 @andrei14vl
-- [ ] sursa 100
-- [ ] sursa x
+- [x] sursa back @palcu
 - [ ] teste
