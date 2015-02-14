@@ -1,6 +1,7 @@
 from random import randint
+import sys
 
-N = 10000
+N = int(sys.argv[1])
 MAX_ITEM_ARRAY = min(100, N)
 nCheats = randint(0, 3)
 cheatSize = randint(2, MAX_ITEM_ARRAY + 1)
