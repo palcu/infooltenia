@@ -67,9 +67,9 @@ Probleme, rezolvari
 - [x] sursa N^3
 - [x] teste
 
-## Calup
+## Teleport
 
-- [ ] sursa 100 @andrei14vl
-- [ ] sursa 100
-- [ ] sursa x
-- [ ] teste
+- [x] sursa 100 @hasnarobert O(N * constanta)
+- [x] sursa 100 @andrei14vl O(N)
+- [x] sursa back @palcu
+- [x] teste
