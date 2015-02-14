@@ -1,0 +1,26 @@
+Problema se poate împărți în două părți. În prima parte vom determina care numere au fost furate și le vom pune într-un vector iar în cea de-a doua parte vom număra care numere au fost furate de cele mai multe ori.
+
+O primă soluție pentru prima parte ar fi să verificăm pentru fiecare număr de la 1 la N dacă el se regăsește de fiecare dată când Carl verifică care număr a fost furat.
+Complexitate timp - O(N^2 * M)
+
+O a doua soluție ar fi să folosim un vector caracteristic inițializat cu 0 pentru fiecare număr posibil, și să setăm 1 pentru fiecare număr care apare. Vom efectua apoi o parcurgere și vom afla numărul lipsă. Din nefericire, pentru ultimele 4 teste, restricțiile de memorie nu permit acest lucru.
+Complexitate timp - O(N * M)
+
+
+Cea mai bună soluție este de a ne folosi de formula sumei lui Gauss. Vom însuma toate numerele de pe bilețele care încă sunt în cutie, vom calcula suma la care ne-am fi aștepta și vom efectua o scădere. Trebuie să avem grijă ca atunci când calculăm suma lui Gauss, să facem întâi împărțirea ca să nu apară un overflow
+
+if (n mod 2 == 0)
+  suma = n / 2 * (n + 1)
+else
+  suma = (n + 1) / 2 * n
+
+Pentru partea a doua, ne va rămâne vectorul de bilețele care au fost furate. În exemplul din enunț acesta ar fi:
+
+1 1 4 2 4 3 3
+
+Pentru a determina care numere apar de cele mai multe ori, putem folosi din nou un vector caracteristic în care numărăm care numere apar de cele mai multe ori pentru 60% din punctaj.
+
+Cel mai eficient este să sortăm acest vector deoarece are doar maxim 100 de elemente și să numărăm în timp liniar care apar de cele mai multe ori.
+
+Complexitatea de timp cea mai bună - O(N * M) + O(M log M) + O(M)
+Complexitatea de memorie cea mai bună - O(M)

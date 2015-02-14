@@ -26,6 +26,15 @@ Pentru 60% din teste:
 1 <= M <= 100
 ```
 
+Pentru restul
+
+```
+2 <= N <= 300.000
+1 <= M <= 100
+```
+
+Pentru
+
 ## lipsa.in
 
 ```
