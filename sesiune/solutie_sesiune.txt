@@ -1,0 +1,24 @@
+Solutie Sesiune
+
+O(N^4) - Evident
+
+O(N^3) : Pentru un triplet de indici distincti, verificam daca exista o pozitie complementara, incat, insumand cele 4 valori sa obtinem suma S. 
+Implementarea va trebui sa fie facuta in asa fel incat sa pastreze indicii diferiti.
+    FOR i =  1 .. N - 2 
+    {
+        FOR j = i + 1 .. N - 1
+            FOR k = j + 1 .. N
+            sol += nr_vals[S - v[i] - v[j] - v[k]];
+
+        ++nr_vals[v[i]];  //v[i] va putea fi folosit in tripletii urmatori.
+    }
+
+O(N^2) - Vom identifica pentru fiecare pereche de indici, o pereche anterioara disjuncta cu care sa se formeze suma S.
+    FOR i = 1 .. N - 1
+    { 
+        FOR j = i + 1 .. N
+            sol += nr_vals[S - v[i] - v[j]];  //query pentru perechea complementara sumei (i, j)
+
+        FOR j = 1 ... i - 1
+            ++nr_vals[v[i] + v[j]]; // update perechea (i, j), perechea v[i] + v[j] poate fi folosita impreuna cu perchile urmatoare.
+    }
