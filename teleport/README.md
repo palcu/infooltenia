@@ -1,6 +1,6 @@
 # Teleport
 
-Bobut a cazut intr-o capacana intinsa de fratii lui extraterestri, si este in pericol. El s-a trezit la capatul unui coridor foarte lung impartit in `N` celule. Pentru a scapa el trebuie sa ajunga dincolo de capatul opus. 
+Bobut și prietena Neytiri lui au cazut intr-o capacana intinsa de fratii lor extraterestri, si sunt in pericol. Bobut s-a trezit la capatul unui coridor foarte lung impartit in `N` celule. La sfârșitul coridorului se află prietena lui care, îl așteaptă de Valentine's Day să meargă la un concert romantic.
 Incercand sa scape, Bobut a descoperit toate proprietatile speciale ale coridorului:
 
 * Celulele din coridor sunt numerotate de la `0` la `N-1`.
@@ -12,7 +12,7 @@ Incercand sa scape, Bobut a descoperit toate proprietatile speciale ale coridoru
   * Din orice celula el se poate teleporta `V` celule mai in fata, unde `V` este numarul scris pe podeaua celulei in care se afla.
   * Teleportorul lui personal il poate teleporta `K` celula mai in fata, dar din pacate mai are baterie pentru `M` astfel de teleportari
 
-Bobut nu doar ca vrea sa scape, ci vrea sa scape trecand prin cat mai putine celule.
+Bobut nu doar ca vrea sa scape, vrea să ajungă în numărul cel mai mic de pași la prietena lui.
 
 # Cerinta
 
@@ -36,7 +36,7 @@ Fisierul de iesire `teleport.out` va contine un singur numar reprezentand numaru
 
 # Exemple
 
-in: 
+in:
 10 1 5
 2 8 3 1 0 3 2 2 2 2
 
